@@ -12,7 +12,7 @@ dp = Dispatcher(bot=bot)
 
 @dp.message_handler(commands='start')
 async def start(message: Message):
-    '''curl -X POST -F 'user_id=13131323322133' -F 'name=sdadadasd' -F photo=@default.png http://0.0.0.0:4321/addUser'''
+    '''curl -X POST -F 'user_id=13131323322133' -F 'name=sdadadasd' -F photo=@default.png http://161.35.141.25:4321/addUser'''
     user_id = message.from_user.id
     name = message.from_user.first_name
     user_name = message.from_user.username
@@ -21,10 +21,10 @@ async def start(message: Message):
         p = await bot.download_file_by_id(photo['photos'][0][0].file_id)
         with open('aaa.png', 'wb') as f:
             f.write(p.read())
-        system(f"curl -X POST -F 'user_id={user_id}' -F 'name={name}' -F 'user_name={user_name}' -F photo=@aaa.png http://0.0.0.0:4321/addUser")
+        system(f"curl -X POST -F 'user_id={user_id}' -F 'name={name}' -F 'user_name={user_name}' -F photo=@aaa.png http://161.35.141.25:4321/addUser")
     else:
-        post('http://0.0.0.0:4321/addUser', data={"user_id": user_id, "name": name, 'user_name': user_name})
-    print(post('http://0.0.0.0:4321/createChat', data={"chat_id": user_id}).text)
+        post('http://161.35.141.25:4321/addUser', data={"user_id": user_id, "name": name, 'user_name': user_name})
+    print(post('http://161.35.141.25:4321/createChat', data={"chat_id": user_id}).text)
     await message.answer('Чат открыт')
 
 
@@ -35,7 +35,7 @@ async def message_handler(message: Message):
     chat_id = user_id
     message_type = 'text'
 
-    post('http://0.0.0.0:4321/sendMessage', data={'content': content,
+    post('http://161.35.141.25:4321/sendMessage', data={'content': content,
                                                   'user_id': user_id,
                                                   'chat_id': chat_id,
                                                   'message_type': message_type})
@@ -48,10 +48,10 @@ async def any_handler(message: Message):
     file = await message.photo[-1].download()
     filename = file.name
     message_type = 'image'
-    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://0.0.0.0:4321/sendMessage")
+    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://161.35.141.25:4321/sendMessage")
     remove(filename)
     if message.caption:
-        post('http://0.0.0.0:4321/sendMessage', data={'content': message.caption,
+        post('http://161.35.141.25:4321/sendMessage', data={'content': message.caption,
                                                       'user_id': user_id,
                                                       'chat_id': user_id,
                                                       'message_type': 'text'})
@@ -64,10 +64,10 @@ async def video_handler(message: Message):
     file = await message.video.download()
     filename = file.name
     message_type = 'video'
-    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://0.0.0.0:4321/sendMessage")
+    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://161.35.141.25:4321/sendMessage")
     remove(filename)
     if message.caption:
-        post('http://0.0.0.0:4321/sendMessage', data={'content': message.caption,
+        post('http://161.35.141.25:4321/sendMessage', data={'content': message.caption,
                                                       'user_id': user_id,
                                                       'chat_id': user_id,
                                                       'message_type': 'text'})
@@ -81,10 +81,10 @@ async def audio_handler(message: Message):
     file = await data.download()
     filename = file.name
     message_type = 'audio'
-    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://0.0.0.0:4321/sendMessage")
+    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://161.35.141.25:4321/sendMessage")
     remove(filename)
     if message.caption:
-        post('http://0.0.0.0:4321/sendMessage', data={'content': message.caption,
+        post('http://161.35.141.25:4321/sendMessage', data={'content': message.caption,
                                                       'user_id': user_id,
                                                       'chat_id': user_id,
                                                       'message_type': 'text'})
@@ -97,10 +97,10 @@ async def any_handler(message: Message):
     file = await message.document.download()
     filename = file.name
     message_type = 'document'
-    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://0.0.0.0:4321/sendMessage")
+    system(f"curl -X POST -F 'chat_id={user_id}' -F 'user_id={user_id}' -F 'message_type={message_type}' -F file=@{filename} http://161.35.141.25:4321/sendMessage")
     remove(filename)
     if message.caption:
-        post('http://0.0.0.0:4321/sendMessage', data={'content': message.caption,
+        post('http://161.35.141.25:4321/sendMessage', data={'content': message.caption,
                                                       'user_id': user_id,
                                                       'chat_id': user_id,
                                                       'message_type': 'text'})
@@ -108,7 +108,7 @@ async def any_handler(message: Message):
 
 async def update():
     try:
-        data = get('http://0.0.0.0:4321/getUpdates').json()
+        data = get('http://161.35.141.25:4321/getUpdates').json()
         if data:
             print(data)
         for msg in data:
@@ -118,7 +118,7 @@ async def update():
                 await bot.send_message(user_id, text)
             else:
                 file = msg.get('content')
-                file_bytes = get('http://0.0.0.0:4321/static/' + file).content
+                file_bytes = get('http://161.35.141.25:4321/static/' + file).content
                 with open(file.split('/')[-1], 'wb') as f:
                     f.write(file_bytes)
                 if msg.get('message_type_id') == 'image':
