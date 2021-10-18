@@ -17,8 +17,8 @@ async def add_user(user_id: int,
     if not photo:
         photo = 'default.png'
 
-    q = '''INSERT INTO admin_data_webusers(user_id, user_name, name, photo)
-           VALUES($1, $2, $3, $4)
+    q = '''INSERT INTO admin_data_webusers(user_id, user_name, name, photo, comment)
+           VALUES($1, $2, $3, $4, '')
            ON CONFLICT(user_id) DO 
            UPDATE SET
                user_name = EXCLUDED.user_name,
