@@ -181,16 +181,16 @@
  1183  screen -x carser
  1184  cd carserforbusines/
  1185  cd web
- 1186  python3 manage.py runserver 0.0.0.0:9999
+ 1186  python3 manage.py runserver 0.0.0.0:4321
  1187  python3 manage.py rucreatesuperuser
  1188  python3 manage.py createsuperuser
  1189  python3 manage.py rucreatesuperuser
- 1190  python3 manage.py runserver 0.0.0.0:9999
+ 1190  python3 manage.py runserver 0.0.0.0:4321
  1191  cd ..
  1192  ls
  1193  cd carserforbusines/
  1194  cd web
- 1195  python3 manage.py runserver 0.0.0.0:9999
+ 1195  python3 manage.py runserver 0.0.0.0:4321
  1196  cd ..
  1197  cd..
  1198  cd root
@@ -199,7 +199,7 @@
  1201  ls
  1202  cd carserforbusines/
  1203  cd web
- 1204  python3 manage.py runserver 0.0.0.0:9999
+ 1204  python3 manage.py runserver 0.0.0.0:4321
  1205  cd ../..\
  1206  cd ../..
  1207  cd carse
@@ -391,7 +391,7 @@
  1393  python3 app.py
  1394  cd carserforbusines/
  1395  cd web
- 1396  python3 manage.py runserver 0.0.0.0:9999
+ 1396  python3 manage.py runserver 0.0.0.0:4321
  1397  cd bb
  1398  cs web
  1399  cd web
@@ -547,7 +547,7 @@
  1549  python3 app.py
  1550  cd carserforbusines/
  1551  cd web
- 1552  python3 manage.py runserver 0.0.0.0:9999
+ 1552  python3 manage.py runserver 0.0.0.0:4321
  1553  sudo service postgresql status
  1554  screen -x bb_django
  1555  screen -S bb_django
@@ -712,9 +712,9 @@
  1714  python3 manage.py runserver
  1715  cd carse
  1716  cd carserforbusines/
- 1717  python3 manage.py runserver 0.0.0.0:9999
+ 1717  python3 manage.py runserver 0.0.0.0:4321
  1718  cd web
- 1719  python3 manage.py runserver 0.0.0.0:9999
+ 1719  python3 manage.py runserver 0.0.0.0:4321
  1720  cd ../..
  1721  rm -r carserforbusines/
  1722  swapon /swapfile
@@ -723,12 +723,12 @@
  1725  cd carserforbusines/
  1726  cd carserforbusiness/
  1727  cd web
- 1728  python3 manage.py runserver 0.0.0.0:9999
+ 1728  python3 manage.py runserver 0.0.0.0:4321
  1729  cd ..
  1730  cd carserforbusiness/
  1731  cd wev
  1732  cd web
- 1733  python3 manage.py runserver 0.0.0.0:9999
+ 1733  python3 manage.py runserver 0.0.0.0:4321
  1734  git pull
  1735  git clone https://github.com/sidqdev/deposidqdev
  1736  cd deposidqdev/
