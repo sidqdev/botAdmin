@@ -1,0 +1,1000 @@
+ 1003  screen -x musback 
+ 1004  systemctl status nginx.service 
+ 1005  systemctl start nginx.service 
+ 1006  systemctl status nginx.service 
+ 1007  screen -x carser 
+ 1008  screen -x musfront 
+ 1009  https://github.com/sidqdev/bb.git
+ 1010  git clone https://github.com/sidqdev/bb.git
+ 1011  screen -x bb
+ 1012  screen -S bb
+ 1013  screen -x bb
+ 1014  screen -S bbdjango
+ 1015  screen -x bb
+ 1016  screen -x carser
+ 1017  sceen -x bb
+ 1018  screen -x bb
+ 1019  sceen -x bb
+ 1020  screen -x bb
+ 1021  screen -x carser
+ 1022  screen -x carser
+ 1023  screen -x bb
+ 1024  screen -x carser
+ 1025  screen -x bb
+ 1026  screen -x carser
+ 1027  screen -x bb
+ 1028  python3
+ 1029  screen -x bb
+ 1030  screen -x bbdjango 
+ 1031  screen -x bb
+ 1032  screen -x carser
+ 1033  screen -x carser 
+ 1034  ls
+ 1035  cd ..
+ 1036  cd root/
+ 1037  ls
+ 1038  cd ..
+ 1039  ls
+ 1040  cd carserforbusines/
+ 1041  ls
+ 1042  cd ..
+ 1043  rm -r carserforbusines/
+ 1044  cd root/
+ 1045  ls
+ 1046  screen -x carser 
+ 1047  screen -S webcarser
+ 1048  screen -x webcarser 
+ 1049  screen -x carser 
+ 1050  screen -ls
+ 1051  screen -x carser
+ 1052  screen -x webcarser 
+ 1053  ls
+ 1054  screen -x carser
+ 1055  screen -x webcarser
+ 1056  screen -x carser
+ 1057  screen -x webcarser
+ 1058  screen -x carser
+ 1059  cd carsearcher
+ 1060  pythno3 main.py 
+ 1061  pythono3 main.py 
+ 1062  python3 main.py 
+ 1063  chromedriver
+ 1064  cd ..
+ 1065  tar -zxvf carsearcher.tag.gz 
+ 1066  cd carsearcher
+ 1067  python3 main.py 
+ 1068  cd ..
+ 1069  tar -zxvf carsearcher.tag.gz 
+ 1070  cd carsearcher
+ 1071  python3 main.py 
+ 1072  /usr/bin/chromedriver --verison
+ 1073  /usr/bin/chromedriver -verison
+ 1074  /usr/bin/chromedriver --help
+ 1075  /usr/bin/chromedriver --version
+ 1076  cd ..
+ 1077  tar -zxvf carsearcher.tag.gz 
+ 1078  cd carsearcher
+ 1079  python3 main.py 
+ 1080  cd ..
+ 1081  tar -zxvf carsearcher.tag.gz 
+ 1082  cd carsearcher
+ 1083  python3 main.py 
+ 1084  cd ..
+ 1085  tar -zxvf carsearcher.tag.gz 
+ 1086  cd carsearcher
+ 1087  python3 main.py 
+ 1088  cd ..
+ 1089  rm -r carsearcher
+ 1090  tar -zxvf carsearcher.tag.gz 
+ 1091  cd carsearcher
+ 1092  python3 main.py 
+ 1093  cd ..
+ 1094  tar -zxvf carsearcher.tag.gz 
+ 1095  cd carsearcher
+ 1096  python3 main.py 
+ 1097  cd ..
+ 1098  tar -zxvf carsearcher.tag.gz 
+ 1099  cd carsearcher
+ 1100  python3 main.py 
+ 1101  cd ..
+ 1102  tar -zxvf carsearcher.tag.gz 
+ 1103  cd carsearcher
+ 1104  python3 main.py 
+ 1105  sudo apt-get install xvfb
+ 1106  cd ..
+ 1107  rm -r carsearcher
+ 1108  tar -zxvf carsearcher.tag.gz 
+ 1109  cd carsearcher
+ 1110  cd ..
+ 1111  tar -zxvf carsearcher.tag.gz 
+ 1112  cd carsearcher
+ 1113  cd ..
+ 1114  tar -zxvf carsearcher.tag.gz 
+ 1115  cd carsearcher
+ 1116  xvfb-run -a --server-args="-screen 0 1280x800x24 -ac -nolisten tcp -dpi 96 +extension RANDR" python3 main.py
+ 1117  cd ..
+ 1118  tar -zxvf carsearcher.tag.gz 
+ 1119  cd carsearcher
+ 1120  python3 main.py 
+ 1121  pip3 install pyvirtualdisplay
+ 1122  python3 main.py 
+ 1123  cd //
+ 1124  ls
+ 1125  cd root
+ 1126  cd carsearcher
+ 1127  cd ..
+ 1128  tar -zxvf carsearcher.tag.gz 
+ 1129  cd carsearcher
+ 1130  python3 main.py 
+ 1131  cd ..
+ 1132  tar -zxvf carsearcher.tag.gz 
+ 1133  cd carsearcher
+ 1134  python3 main.py 
+ 1135  cd ..
+ 1136  tar -zxvf carsearcher.tag.gz 
+ 1137  cd carsearcher
+ 1138  python3 main.py 
+ 1139  cd ..
+ 1140  cd carserforbusines/
+ 1141  ls
+ 1142  python3 app.p
+ 1143  python3 app.py
+ 1144  sudo -u postges psql create user carsernew
+ 1145  sudo -u postgres psql create user carsernew
+ 1146  sudo -u postgres psql createuser carsernew
+ 1147  sudo -u postgres psql createtable carsernew
+ 1148  sudo -u postgres createuser carsernew
+ 1149  sudo -u postgres createdb carsernew
+ 1150  sudo -u postgres psql
+ 1151  python3 app.py
+ 1152  cd web
+ 1153  python3 manage.py makemigrations
+ 1154  python3 manage.py migrate
+ 1155  cd ..
+ 1156  python3 app.py
+ 1157  cd app
+ 1158  cd modules.py 
+ 1159  cat modules.py 
+ 1160  nano main.py 
+ 1161  ls
+ 1162  nano main.py 
+ 1163  cd ..
+ 1164  rm -r carserforbusines/
+ 1165  ls
+ 1166  cd carserforbusines/
+ 1167  python3 app.py
+ 1168  cd ..
+ 1169  rm -r carserforbusines/
+ 1170  cd carserforbusines/
+ 1171  python3 app.py
+ 1172  exit
+ 1173  screen -S carser
+ 1174  screen -S webcarser
+ 1175  screen -ls
+ 1176  screen -D -p 3405434.webcarser
+ 1177  screen -D -p 3405434
+ 1178  screen -x -p 3537846
+ 1179  screen -x -pr3537846
+ 1180  screen -x -r 3537846
+ 1181  screen -x webcarser
+ 1182  rm -r carserforbusines/
+ 1183  screen -x carser
+ 1184  cd carserforbusines/
+ 1185  cd web
+ 1186  python3 manage.py runserver 0.0.0.0:9999
+ 1187  python3 manage.py rucreatesuperuser
+ 1188  python3 manage.py createsuperuser
+ 1189  python3 manage.py rucreatesuperuser
+ 1190  python3 manage.py runserver 0.0.0.0:9999
+ 1191  cd ..
+ 1192  ls
+ 1193  cd carserforbusines/
+ 1194  cd web
+ 1195  python3 manage.py runserver 0.0.0.0:9999
+ 1196  cd ..
+ 1197  cd..
+ 1198  cd root
+ 1199  ls
+ 1200  cd ~
+ 1201  ls
+ 1202  cd carserforbusines/
+ 1203  cd web
+ 1204  python3 manage.py runserver 0.0.0.0:9999
+ 1205  cd ../..\
+ 1206  cd ../..
+ 1207  cd carse
+ 1208  cd carserforbusines/
+ 1209  python3 app.py
+ 1210  nano app/parser.py 
+ 1211  python3 app.py
+ 1212  curl 2ip.ru
+ 1213  reboot
+ 1214  screen -x carser
+ 1215  cd musicsercher/
+ 1216  ./gunicorn.sh 
+ 1217  cd musicsercher/
+ 1218  ./gunicorn.sh 
+ 1219  cd bb
+ 1220  cd web/
+ 1221  python3 manage.py runserver
+ 1222  python3 manage.py runserver 0.0.0.0:7000
+ 1223  python3 manage.py migrate
+ 1224  python3 manage.py makemigrations
+ 1225  python3 manage.py migrate
+ 1226  python3 manage.py runserver 0.0.0.0:7000
+ 1227  cd bb
+ 1228  git clone
+ 1229  git pu
+ 1230  git pull
+ 1231  python3 app.py
+ 1232  sudo -u postgres psql 
+ 1233  sudo -u postgres psql createuser pythonspot
+ 1234  sudo -u postgres createuser pythonspot
+ 1235  sudo -u postges psql
+ 1236  alter user pythonspot with encrypted password 'password';
+ 1237  sudo -u postges psql
+ 1238  sudo -u postgres psql
+ 1239  ап
+ 1240  fg
+ 1241  python3 app.py
+ 1242  git pu
+ 1243  git pull
+ 1244  rm app/parser/main.session 
+ 1245  git pull
+ 1246  python3 app.py
+ 1247  ls
+ 1248  cd app
+ 1249  ls
+ 1250  cd parser/
+ 1251  s
+ 1252  ls
+ 1253  nano db.py 
+ 1254  cd ../../..
+ 1255  cd b
+ 1256  cd bb
+ 1257  python3 app.py
+ 1258  nano app/parser/db.py 
+ 1259  python3 app.py
+ 1260  git pull
+ 1261  rm app/parser/main.session 
+ 1262  git pull
+ 1263  python3 app.py
+ 1264  rm app/parser/main.session 
+ 1265  python3 app.py
+ 1266  rm app/parser/main.session 
+ 1267  git pull
+ 1268  python3 app.py
+ 1269  git pull
+ 1270  python3 app.py
+ 1271  git pull
+ 1272  python3 app.py
+ 1273  git pull
+ 1274  python3 app.py
+ 1275  git pull
+ 1276  python3 app.py
+ 1277  git pull
+ 1278  python3 app.py
+ 1279  git pull
+ 1280  python3 app.py
+ 1281  git pull
+ 1282  rm app/parser/main.session 
+ 1283  git pull
+ 1284  cd web/
+ 1285  apt install djngo
+ 1286  pip3 install django
+ 1287  python3 manage.py makemigrations
+ 1288  python3 manage.py migrate
+ 1289  python3 manage.py createsuperuser
+ 1290  python3 manage.py runserver
+ 1291  python3 manage.py runserver 0.0.0.0:7000
+ 1292  git pull
+ 1293  python3 manage.py runserver 0.0.0.0:7000
+ 1294  cd ..
+ 1295  python3 app
+ 1296  python3 app.py
+ 1297  git pull
+ 1298  python3 app.py
+ 1299  git pull
+ 1300  python3 app.py
+ 1301  git pull
+ 1302  python3 app.py
+ 1303  git pull
+ 1304  python3 app.py
+ 1305  git pull
+ 1306  python3 app.py
+ 1307  git pull
+ 1308  python3 app.py
+ 1309  git pull
+ 1310  python3 app.py
+ 1311  git pull
+ 1312  python3 app.py
+ 1313  git pull
+ 1314  python3 app.py
+ 1315  git pull
+ 1316  python3 app.py
+ 1317  git pull
+ 1318  python3 app.py
+ 1319  git pull
+ 1320  python3 app.py
+ 1321  git pull
+ 1322  python3 app.py
+ 1323  git pull
+ 1324  python3 app.py
+ 1325  git pull
+ 1326  python3 app.py
+ 1327  git pull
+ 1328  python3 app.py
+ 1329  git pull
+ 1330  python3 app.py
+ 1331  git pull
+ 1332  python3 app.py
+ 1333  git pull
+ 1334  python3 app.py
+ 1335  git pull
+ 1336  python3 app.py
+ 1337  git pull
+ 1338  python3 app.py
+ 1339  git pull
+ 1340  python3 app.py
+ 1341  git pull
+ 1342  python3 app.py
+ 1343  git pull
+ 1344  python3 app.py
+ 1345  git pull
+ 1346  rm app/parser/db.py 
+ 1347  git pull
+ 1348  python3 app.py
+ 1349  git pull
+ 1350  python3 app.py
+ 1351  cd soundapp-cum-site/
+ 1352  npm start
+ 1353  swapon -a
+ 1354  htop
+ 1355  cd ..
+ 1356  dd if=/dev/zero of=swapfile bs=1024 [Bcount=65536
+ 1357  mkswap swapfile 
+ 1358  swapon swapfile 
+ 1359  chmod 777 swapfile 
+ 1360  swapon swapfile 
+ 1361  rm swapfile 
+ 1362  sudo rm swapfile 
+ 1363  sudo rm -r swapfile 
+ 1364  swapoff
+ 1365  sudo rm -r swapfile 
+ 1366  sudo fallocate -l 1G /swapfile
+ 1367  sudo fallocate -l 13 /swapfile
+ 1368  sudo fallocate -l 3G /swapfile
+ 1369  sudo dd if=/dev/zero of=/swapfile bs=1024 count=1048576
+ 1370  sudo chmod 600 /swapfile
+ 1371  sudo mkswap /swapfile
+ 1372  sudo swapon /swapfile
+ 1373  sudo sysctl vm.swappiness=10
+ 1374  htop
+ 1375  cd soundapp-cum-site/
+ 1376  npm start
+ 1377  cd carserforbusines/
+ 1378  python3 app.py
+ 1379  cd ..
+ 1380  screen -x bb
+ 1381  screen -S bb_bot
+ 1382  screen -S bb_django
+ 1383  screen -x bb_django
+ 1384  screen -S carser_bot
+ 1385  screen -S carser_django
+ 1386  screen -x carser_bot
+ 1387  screen -x bb_bot 
+ 1388  screen -x carser_bot 
+ 1389  screen -x bb_django 
+ 1390  screen -x bb_bot
+ 1391  screen -x bb_django 
+ 1392  cd carserforbusines/
+ 1393  python3 app.py
+ 1394  cd carserforbusines/
+ 1395  cd web
+ 1396  python3 manage.py runserver 0.0.0.0:9999
+ 1397  cd bb
+ 1398  cs web
+ 1399  cd web
+ 1400  python3 manage.py runserver
+ 1401  python3 manage.py runserver 0.0.0.0:7:7000
+ 1402  python3 manage.py runserver 0.0.0.0:7000
+ 1403  git pull
+ 1404  python3 manage.py migrate
+ 1405  python3 manage.py makemigrations
+ 1406  python3 manage.py migrate
+ 1407  python3 manage.py runserver
+ 1408  python3 manage.py runserver 0.0.0.0:7000
+ 1409  python3 manage.py runserver 0.0.0.0:7777
+ 1410  python3 manage.py runserver 
+ 1411  python3 manage.py runserver 0.0.0.0:7000
+ 1412  cs bb/
+ 1413  ls
+ 1414  cd bb
+ 1415  ls
+ 1416  python3 app.py
+ 1417  screen -x carser_bot
+ 1418  screen -S carser_bot
+ 1419  screen -x carser_bot 
+ 1420  screen -x bb_bot
+ 1421  screen -S bb_bot
+ 1422  screen -S bb_django
+ 1423  screen -S carser_django
+ 1424  htop
+ 1425  swapon /swapfile
+ 1426  htop
+ 1427  sudo fallocate -l 1G /swapfile
+ 1428  sudo fallocate -l 8G /swapfile2
+ 1429  sudo dd if=/dev/zero of=/swapfile bs=8G count=1048576
+ 1430  sudo dd if=/dev/zero of=/swapfile2 bs=8G count=1048576
+ 1431  sudo chmod 600 /swapfile2
+ 1432  sudo mkswap /swapfile2
+ 1433  sudo dd if=/dev/zero of=/swapfile bs=8192 count=1048576
+ 1434  sudo dd if=/dev/zero of=/swapfile2 bs=8192 count=1048576
+ 1435  sudo chmod 600 /swapfile2
+ 1436  sudo mkswap /swapfile2
+ 1437  swapon /swapfile2
+ 1438  sudo sysctl vm.swappiness=10
+ 1439  htop
+ 1440  screen -x carser_bot
+ 1441  screen -x bb_bot 
+ 1442  screen -x carser_
+ 1443  screen -x carser_bot
+ 1444  screen -x carser_bot 
+ 1445  cat carserforbusines/app.py
+ 1446  cd carse
+ 1447  cd carserforbusines/
+ 1448  ls
+ 1449  nano app.py 
+ 1450  screen -x carser_bot
+ 1451  screen -x bb_bot
+ 1452  screen -x bb_django 
+ 1453  screen -x bb_bot
+ 1454  cd /etc/postgresql/
+ 1455  ls
+ 1456  cd 12
+ 1457  cd main
+ 1458  ls
+ 1459  sudo nano postgresql.conf 
+ 1460  sudo nano pg_hba.conf 
+ 1461  sudo service postgresql restart
+ 1462  service postgresql status
+ 1463  cd /
+ 1464  cd root
+ 1465  cd bb
+ 1466  cd wev
+ 1467  cd web
+ 1468  python3 manage.py runserver
+ 1469  cd carserforbusines/
+ 1470  python3 app.py
+ 1471  sudo -u postges psql
+ 1472  sudo -u postgres psql
+ 1473  psql
+ 1474  cd bb/web
+ 1475  python3 manage.py migrate
+ 1476  python3 manage.py makemigrations
+ 1477  python3 manage.py migrate
+ 1478  python3 manage.py runserver 0.0.0.0:8888
+ 1479  python3 manage.py runserver 0.0.0.0:8080
+ 1480  service postgresql status
+ 1481  sudo netstat -nl | grep postgres
+ 1482  cd /etc/postgresql/12/main
+ 1483  sudo nano postgresql.conf 
+ 1484  sudo nano pg_hba.conf 
+ 1485  cd /
+ 1486  cd root
+ 1487  ls
+ 1488  cd web
+ 1489  cd bb
+ 1490  cd web
+ 1491  service postgresql stop
+ 1492  service postgresql status
+ 1493  service postgresql start
+ 1494  service postgresql status
+ 1495  python3 manage.py runserver
+ 1496  rm /usr/local/var/postgres/postmaster.pid
+ 1497  rm /usr/local/var/postgres/postmaster.pid 
+ 1498  pg_resetxlog -f /usr/local/var/postgres
+ 1499  python3 manage.py runserver
+ 1500  netstat
+ 1501  netstat > a.txt
+ 1502  nano a.txt
+ 1503  rm a.txt
+ 1504  sudo lsof -i -P -n | grep LISTEN
+ 1505  sudo service postgresql start
+ 1506  sudo lsof -i -P -n | grep LISTEN
+ 1507  sudo service postgresql stop
+ 1508  sudo service postgresql start
+ 1509  sudo lsof -i -P -n | grep LISTEN
+ 1510  sudo -u postgres psql
+ 1511  ps -ef | grep postgres
+ 1512  sudo find /tmp/ -name .s.PGSQL.5432
+ 1513  sudo systemctl start postgresql
+ 1514  sudo -u postgres psql
+ 1515  sudo systemctl enable postgresql
+ 1516  sudo nno /etc/postgresql/12/main/postgresql.conf 
+ 1517  sudo nano /etc/postgresql/12/main/postgresql.conf 
+ 1518  sudo service postgesql status
+ 1519  service postgresql
+ 1520  service postgresql status
+ 1521  cd..
+ 1522  screen -x bb_django 
+ 1523  screen -x carser_
+ 1524  screen -x carser_bb
+ 1525  screen -x carser_bot
+ 1526  cd bb
+ 1527  python3 app.py
+ 1528  git pull
+ 1529  python3 app.py
+ 1530  git pull
+ 1531  python3 app.py
+ 1532  git pull
+ 1533  python3 app.py
+ 1534  git pull
+ 1535  python3 app.py
+ 1536  git pull
+ 1537  python3 app.py
+ 1538  git pull
+ 1539  python3 app.py
+ 1540  git pull
+ 1541  python3 app.py
+ 1542  git pull
+ 1543  python3 app.py
+ 1544  git pull
+ 1545  python3 app.py
+ 1546  git pull
+ 1547  python3 app.py
+ 1548  git pull
+ 1549  python3 app.py
+ 1550  cd carserforbusines/
+ 1551  cd web
+ 1552  python3 manage.py runserver 0.0.0.0:9999
+ 1553  sudo service postgresql status
+ 1554  screen -x bb_django
+ 1555  screen -S bb_django
+ 1556  screen -S bb_bot
+ 1557  screen -S carser_bot
+ 1558  screen -S carser_django
+ 1559  screen -x carser_bot
+ 1560  screen -x carser_web
+ 1561  screen -x carser_django 
+ 1562  screen -x carser_web
+ 1563  screen -x carser_bot
+ 1564  screen -x carser_django 
+ 1565  git clone https://github.com/sidqdev/carserforbusiness.git
+ 1566  rm -r carserforbusiness/
+ 1567  git clone https://github.com/sidqdev/carserforbusiness.git
+ 1568  screen -x carser_django 
+ 1569  screen -x carser_bot
+ 1570  htop
+ 1571  screen -x carser_bot
+ 1572  screen -x bb_bot
+ 1573  screen -x carser_bot
+ 1574  screen -x bb_bot
+ 1575  screen -x bb_django 
+ 1576  screen -x bb_bot
+ 1577  sudo timedatectl set-timezone Kyiv
+ 1578  timedatectl list-timezones
+ 1579  sudo timedatectl set-timezone UTC+02:00
+ 1580  sudo timedatectl set-timezone UTC
+ 1581  sudo timedatectl set-timezone Europe/Kiev
+ 1582  screen -x bb_bot
+ 1583  screen -x bb_django 
+ 1584  screen -x bb_bot
+ 1585  screen -x carser_bot
+ 1586  ls
+ 1587  rm carsearcher.tag.gz 
+ 1588  cd musicsercher/
+ 1589  ls
+ 1590  cd app
+ 1591  ls
+ 1592  rm -r sound
+ 1593  rm -r sounds
+ 1594  ls
+ 1595  cd ..
+ 1596  htop
+ 1597  screen -x carser_bot
+ 1598  screen -x carser_bot
+ 1599  screen -x bb_bot
+ 1600  screen -x bb_bot
+ 1601  screen -x bb_bot
+ 1602  screen -x carser_bot
+ 1603  screen -x carser_bot
+ 1604  htop
+ 1605  sudo rm -rf ~/.Trash/*
+ 1606  sudo rm -Rf ~/.local/share/Trash
+ 1607  screen -S deposidqdev
+ 1608  screen -x deposidqdev 
+ 1609  htop
+ 1610  ls
+ 1611  cat 190321.sql 
+ 1612  cd bb/
+ 1613  ls
+ 1614  cd ../
+ 1615  history
+ 1616  screen -x bb_bot
+ 1617  ls
+ 1618  cd carsearcher/
+ 1619  ls
+ 1620  cat main.py 
+ 1621  ls
+ 1622  cd ../
+ 1623  ls
+ 1624  cd test/
+ 1625  ls
+ 1626  cd ../
+ 1627  ls
+ 1628  cd bb
+ 1629  ls
+ 1630  cat main.session 
+ 1631  ls
+ 1632  cat app.py 
+ 1633  ls
+ 1634  cd app/
+ 1635  ls
+ 1636  cd bot/
+ 1637  ls
+ 1638  cat loader.py 
+ 1639  ls
+ 1640  cat sender.py 
+ 1641  ls
+ 1642  cat loader.py 
+ 1643  screen -x deposidqdev 
+ 1644  screen -x bb_bot 
+ 1645  screen -x carser_bot
+ 1646  python3
+ 1647  screen -x bb_bot
+ 1648  screen -x carser_bot
+ 1649  nano carserforbusiness/app.py
+ 1650  screen -x carser_bot
+ 1651  screen -x carser_bot
+ 1652  nano bb/app/parser/parser.py 
+ 1653  screen -x bb_bot
+ 1654  sudo nano /etc/ssh/sshd_config
+ 1655  sudo systemct reload sshd.service
+ 1656  sudo systemctl reload sshd.service
+ 1657  cd carserforbusines/
+ 1658  python3 app.py
+ 1659  cd ..
+ 1660  cd carserforbusiness/
+ 1661  python3 app.py
+ 1662  cd ..
+ 1663  cd carserforbusiness/
+ 1664  git pull
+ 1665  python3 app.py
+ 1666  git pull
+ 1667  python3 app.py
+ 1668  git pull
+ 1669  python3 app.py
+ 1670  git pull
+ 1671  python3 app.py
+ 1672  git pull
+ 1673  python3 app.py
+ 1674  git pull
+ 1675  python3 app.py
+ 1676  git pull
+ 1677  python3 app.py
+ 1678  git pull
+ 1679  python3 app.py
+ 1680  screen -x carser_bot
+ 1681  screen -ls
+ 1682  screen -x bb_bot
+ 1683  sudo rm /var/lib/mongodb/mongod.lock
+ 1684  sudo service mongodb start
+ 1685  sudo service mongodb status
+ 1686  sudo service mongodb restart
+ 1687  sudo service mongodb status
+ 1688  cd bb
+ 1689  python3 app.py
+ 1690  git pull
+ 1691  python3 app.py
+ 1692  git pull
+ 1693  python3 app.py
+ 1694  git pull
+ 1695  python3 app.py
+ 1696  git pull
+ 1697  python3 app.py
+ 1698  git pull
+ 1699  python3 app.py
+ 1700  git pull
+ 1701  python3 app.py
+ 1702  git pull
+ 1703  python3 app.py
+ 1704  git pull
+ 1705  python3 app.py
+ 1706  git pull
+ 1707  python3 app.py
+ 1708  git pull
+ 1709  python3 app.py
+ 1710  cd bb/web
+ 1711  python3 manage.py runserver
+ 1712  python3 manage.py makemigrations
+ 1713  python3 manage.py migrate
+ 1714  python3 manage.py runserver
+ 1715  cd carse
+ 1716  cd carserforbusines/
+ 1717  python3 manage.py runserver 0.0.0.0:9999
+ 1718  cd web
+ 1719  python3 manage.py runserver 0.0.0.0:9999
+ 1720  cd ../..
+ 1721  rm -r carserforbusines/
+ 1722  swapon /swapfile
+ 1723  swapon /swapfile2
+ 1724  ls
+ 1725  cd carserforbusines/
+ 1726  cd carserforbusiness/
+ 1727  cd web
+ 1728  python3 manage.py runserver 0.0.0.0:9999
+ 1729  cd ..
+ 1730  cd carserforbusiness/
+ 1731  cd wev
+ 1732  cd web
+ 1733  python3 manage.py runserver 0.0.0.0:9999
+ 1734  git pull
+ 1735  git clone https://github.com/sidqdev/deposidqdev
+ 1736  cd deposidqdev/
+ 1737  ls
+ 1738  source venv/bin/activate
+ 1739  python3 app.py
+ 1740  sudo service mongodb status
+ 1741  screen -S bb_bot
+ 1742  screen -S craser_bot
+ 1743  screen -S bb_web
+ 1744  screen -S carser_web
+ 1745  screen -x craser_bot 
+ 1746  screen -x bb_bot
+ 1747  screen -x bb_web
+ 1748  screen -x bb_bot
+ 1749  cd bb
+ 1750  python3 app.py
+ 1751  ls
+ 1752  rm main.session 
+ 1753  python3 app.py
+ 1754  ls
+ 1755  cd app
+ 1756  ls
+ 1757  cd parser/
+ 1758  ls
+ 1759  rm main.session 
+ 1760  cd ..
+ 1761  python3 app.py
+ 1762  git pull
+ 1763  python3 app.py
+ 1764  screen -S carser_bot
+ 1765  screen -S carser_web
+ 1766  screen -S bb_bot
+ 1767  screen -S bb_web
+ 1768  screen -x bb_bot
+ 1769  screen -x carser_bot
+ 1770  screen -x carser_web
+ 1771  screen -x carser_bot
+ 1772  screen -x bb_цуи
+ 1773  screen -x bb_web
+ 1774  screen -x bb_bot
+ 1775  screen -x carser_bot
+ 1776  screen -x bb_bot
+ 1777  screen -x carser_bot
+ 1778  htop
+ 1779  screen -x carser_bot
+ 1780  screen -x bb_bot
+ 1781  screen -x carser_bot
+ 1782  htop
+ 1783  screen -x carser_bot
+ 1784  htop
+ 1785  screen -x bb_bot
+ 1786  screen -x carser_bot
+ 1787  htop
+ 1788  screen -x carser_bot
+ 1789  screen -x bb_bot
+ 1790  screen -x carser_bot
+ 1791  htop
+ 1792  screen -x carser_bot
+ 1793  screen -x bb_bot
+ 1794  screen -x carser_bot
+ 1795  рещз
+ 1796  htop
+ 1797  screen -x carser_bot
+ 1798  screen -x bb_bot
+ 1799  screen -x bb_web\\
+ 1800  screen -x carser_web
+ 1801  screen -x bb_bot
+ 1802  screen -x carser_bot
+ 1803  screen -x bb_bot
+ 1804  cat bb/app.py 
+ 1805  screen -x bb_bot
+ 1806  python3 --version
+ 1807  screen -x bb_bot
+ 1808  screen -x carser_bot
+ 1809  screen -x bb_bot
+ 1810  screen -x carser_bot
+ 1811  htop
+ 1812  screen -x bb_bot
+ 1813  screen -x carser_bot
+ 1814  ls
+ 1815  cd ..
+ 1816  ls
+ 1817  cd root
+ 1818  ls
+ 1819  cd BitGen/
+ 1820  ls
+ 1821  pip3 install -r requirements.txt 
+ 1822  python3 main.py 
+ 1823  screen -S bitgen
+ 1824  htop
+ 1825  screen -x bitgen 
+ 1826  ды
+ 1827  cd res
+ 1828  s
+ 1829  ls
+ 1830  cd BitGen/
+ 1831  cd results/
+ 1832  ls
+ 1833  sls
+ 1834  python3
+ 1835  ls
+ 1836  rm a.d
+ 1837  screen -x bitgen 
+ 1838  screen -x bitgen
+ 1839  cd BitGen/results/
+ 1840  ls
+ 1841  cd BitGen/
+ 1842  cd results/
+ 1843  ls
+ 1844  screen -x bitgen 
+ 1845  cs BitGen/results/
+ 1846  la
+ 1847  cd BitGen/results/
+ 1848  ls
+ 1849  screen -ls
+ 1850  screen -S depodepo
+ 1851  screen -x bitgen 
+ 1852  cd BitGen/resw
+ 1853  cd BitGen/results/
+ 1854  ls
+ 1855  ls BitGen/
+ 1856  ls BitGen/results/
+ 1857  screen -ls
+ 1858  screen -x depodepo 
+ 1859  python3 main.py 
+ 1860  ls re
+ 1861  ls
+ 1862  cd re
+ 1863  cd results/
+ 1864  ls
+ 1865  cd ..
+ 1866  python3 main.py 
+ 1867  ЙГШЕ
+ 1868  quit
+ 1869  exit
+ 1870  ls
+ 1871  cd BitGen/results/
+ 1872  ls
+ 1873  cd .
+ 1874  cd ..
+ 1875  screen -x bitgen 
+ 1876  ls
+ 1877  screen -ls
+ 1878  rm -r BitGen/
+ 1879  ls
+ 1880  screen -x depodepo 
+ 1881  ls
+ 1882  cd stasyan/
+ 1883  ls
+ 1884  vim main.py 
+ 1885  ls
+ 1886  pip3 install pyQiwiP2P
+ 1887  python3
+ 1888  знерщт3
+ 1889  python3
+ 1890  nano a.py
+ 1891  python3
+ 1892  ls
+ 1893  nano a.pt
+ 1894  ls
+ 1895  cat a.pt
+ 1896  rm a.pt
+ 1897  nano a.py
+ 1898  python3 a.py
+ 1899  nano a.py
+ 1900  python3 a.py
+ 1901  nano a.py
+ 1902  FG
+ 1903  АП
+ 1904  fg
+ 1905  python3 a.py
+ 1906  fg
+ 1907  nano a.py
+ 1908  python3 a.py
+ 1909  nano a.py
+ 1910  python3 a.py
+ 1911  nano a.py
+ 1912  python3 a.py
+ 1913  nano a.py
+ 1914  python3 a.py
+ 1915  exit
+ 1916  nano a.py
+ 1917  python3 a.py
+ 1918  nano a.py
+ 1919  python3 a.py
+ 1920  nano a.py
+ 1921  python3 a.py
+ 1922  python3
+ 1923  nano a.py
+ 1924  python3
+ 1925  python3 a.py
+ 1926  nano a.py
+ 1927  python3 a.py
+ 1928  nano a.py
+ 1929  python3 a.py
+ 1930  nano a.py
+ 1931  python3 a.py
+ 1932  nano a.py
+ 1933  python3 a.py
+ 1934  nano a.py
+ 1935  python3 a.py
+ 1936  curl https://oplata.qiwi.com/create?publicKey=Fnzr1yTebUiQaBLDnebLMMxL8nc6FF5zfmGQnypc*******&amount=100&successUrl=http%3A%2F%2Ftest.ru%3F&email=m@ya.ru&customFields[paySourcesFilter]=qw,card&lifetime=2020-12-01T0509
+ 1937  ls
+ 1938  cd test
+ 1939  ls
+ 1940  cd ..
+ 1941  ls
+ 1942  pip3 install viberbot
+ 1943  python3 b.py
+ 1944  python3 и.py
+ 1945  python3 b.py
+ 1946  sudo python3 b.py
+ 1947  ls
+ 1948  cd ..
+ 1949  ls
+ 1950  mkdir https
+ 1951  cd https
+ 1952  openssl genrsa 2048 > host.key
+ 1953  ls
+ 1954  cat host.key 
+ 1955  chmod 400 host.key
+ 1956  openssl req -new -x509 -nodes -sha256 -days 365 -key host.key -out host.cert
+ 1957  ls
+ 1958  openssl req -new -x509 -nodes -sha256 -days 365 -key host.key -out host.crt
+ 1959  ls
+ 1960  cd ../root
+ 1961  ls
+ 1962  python3 b.py
+ 1963  cat ./https/host.crt
+ 1964  cd ..
+ 1965  ls
+ 1966  ls .
+ 1967  ls ./
+ 1968  cd https/
+ 1969  ls
+ 1970  cd ..
+ 1971  cd root
+ 1972  ls .
+ 1973  ls ../
+ 1974  cat ../https/host.crt
+ 1975  python3 b.py
+ 1976  ls
+ 1977  cd stasyan/
+ 1978  ;s
+ 1979  ls
+ 1980  cat main.py 
+ 1981  cd ..
+ 1982  cat /etc/nginx/conf.d/
+ 1983  cat /etc/nginx/conf.d/nginx.conf 
+ 1984  ls
+ 1985  cd sa
+ 1986  cd saper-online/
+ 1987  ls
+ 1988  python3 app.py
+ 1989  python3 wsgi.py 
+ 1990  ./push.sh 
+ 1991  cat Procfile 
+ 1992  cat push.sh 
+ 1993  exit
+ 1994  git clone https://github.com/sidqdev/workerbot
+ 1995  screen -S workerbot
+ 1996  screen -x workerbot
+ 1997  screen -ls
+ 1998  screen -x craser_web
+ 1999  screen -x 1494
+ 2000  ls
+ 2001  history
+ 2002  history>history.txt

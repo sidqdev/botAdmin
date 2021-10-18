@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+#chat-types{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#chat-types button {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+.user-preview{
+    display: grid;
+    grid-template: "image name" "image preview";
+    grid-template-rows: 0.5fr 0.5fr;/*Размеры строк*/
+    grid-template-columns: 0.25fr 0.75fr; /*Размеры столбцов*/
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+}
+.user-preview-box{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* height: 50px; */
+}
+
+.user-preview-box:hover{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.user-preview .name{
+    grid-area: name;
+    font-size: 20px;
+}
+.user-preview .preview{
+    grid-area: preview;
+    font-size: 15px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+.user-preview .image{
+    grid-area: image;
+    font-size: 15px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+#current-chats ul{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+#current-chats{
+    height: 69.7vh;
+}
+
+.chats-header {
+    height: 15vh;
+}

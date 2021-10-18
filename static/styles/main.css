@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --background-color: grey;
+    --header-color: #f2aa4c;
+    --footer-color: #000000;
+    --main-color: #8ECAE6;
+    --aside-color: #219EBC;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    max-height: 100%;
+    font-family: 'Rubik', sans-serif; 
+}
+
+button {
+    font-family: 'Rubik', sans-serif; 
+}
+
+body {
+    display: grid;
+    grid-template: "header header" "aside main";
+    grid-template-rows: 0.15fr 0.85fr; /*Размеры строк*/
+    grid-template-columns: 0.25fr 0.75fr; /*Размеры столбцов*/
+}
+
+aside{
+    grid-area: aside;
+    background-color: var(--aside-color);
+}
+
+header{
+    grid-area: header;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+}
+main {
+    grid-area: main;
+    background-color: var(--background-color);
+}
+footer{
+    grid-area: footer;
+    background-color: var(--footer-color);
+}
+header .title{
+    font-size: 50px;
+    margin-left: 15px;
+}
+aside .title{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+

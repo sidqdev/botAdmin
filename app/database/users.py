@@ -1,0 +1,34 @@
+from .core import connection
+from typing import Union
+from asyncpg.connection import Connection
+
+
+@connection
+async def add_user(user_id: int,
+                   user_name: str,
+                   name: str,
+                   photo: Union[str, None] = None,
+                   conn: Connection = None) -> int:
+    """
+    :return 0 - already in database
+    :return 1 - new user
+    """
+
+    if not photo:
+        photo = 'default.png'
+
+    q = '''INSERT INTO admin_data_webusers(user_id, user_name, name, photo)
+           VALUES($1, $2, $3, $4)
+           ON CONFLICT(user_id) DO 
+           UPDATE SET
+               user_name = EXCLUDED.user_name,
+               name = EXCLUDED.name,
+               photo = EXCLUDED.photo
+
+           RETURNING (CASE 
+                        WHEN (SELECT user_id FROM admin_data_webusers WHERE user_id=$1) > 0 THEN 0
+                        ELSE 1
+                      END) AS status
+           '''
+
+    return await conn.fetchval(q, user_id, user_name, name, photo)

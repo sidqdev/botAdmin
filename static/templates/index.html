@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="http://0.0.0.0:9999/static/styles/main.css">
+    <link rel="stylesheet" href="http://0.0.0.0:9999/static/styles/chats.css">
+    <link rel="stylesheet" href="http://0.0.0.0:9999/static/styles/chat.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+
+</head>
+<body>
+    <header>
+        <h1 class="title">Время газа</h1>
+    </header>
+    <aside id=chats>
+        <div class="chats-header">
+
+            <h2 class="title">Выбор чата</h2>
+            <div id="chat-types">
+                <button @click="setChats('all-chats')">Все чаты</button>
+                <button @click="setChats('opened-chats')">Открытые чаты: {{ openedChatCount }}</button>
+                <button @click="setChats('closed-chats')">Закрытые чаты</button>
+            </div>
+        </div>
+        <div id=current-chats>
+            <ul>
+                <li v-for="chat in chats" class="user-preview-box">
+                    <div class="user-preview" @click="chooseChat(chat.chat_id)" :id="chat.item_id">
+                        <img class="image" :src="chat.photo" alt="">
+                        <p class="name">{{ chat.name }}</p>
+                        <p class="preview">{{ chat.last_message.content }}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div id='chat'>
+            <div id='chat-messages'>
+                <ul id='chat-items'>
+                    <li v-for="message in chat">
+                        <div class='message-item'>
+                            <div :class="message.user">
+                                <div v-if="message.message_type == 'text'">
+                                    <p>{{ message.name }} - {{ message.content }}</p>
+                                </div>
+                                <div v-else-if="message.message_type == 'image'">
+                                    <img :src="message.content">
+                                </div>
+                                <div v-else-if="message.message_type == 'video'">
+                                    <video :src="message.content" controls="controls"></video>
+                                </div>
+                                <div v-else-if="message.message_type == 'audio'">
+                                    <audio :src="message.content" controls="controls"></audio>
+                                </div>
+                                <div v-else>
+                                    <object :src="message.content">
+                                        <a :href="message.content">{{ message.content.split('/')[message.content.split('/').length - 1] }}</a>
+                                    </object>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>   
+            </div> 
+            <div id='send-menu'>
+                <textarea type="text" id='input-message'></textarea>
+                <button @click="sendMessage()">Отправить</button>
+                <input type='file' id='input-file'>
+                <button @click="changeStatus(status)">{{ statusLabel }}</button>
+            </div>
+        </div>
+    </main>
+</body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="http://0.0.0.0:9999/static/scripts/index.js"></script>
+</html>
