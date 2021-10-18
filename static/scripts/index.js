@@ -189,6 +189,11 @@ let userInfo = new Vue({
                 }
                 this.comment = res.data.comment;
             })
+        },
+        saveText: function(){
+            let data = document.getElementById('user-comment').value;
+            let user_id = current_chat_id;
+            console.log(data, user_id);
         }
     }
 })
