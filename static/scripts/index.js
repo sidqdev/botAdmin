@@ -151,6 +151,7 @@ var chat = new Vue({
             if (file.files.length){
                 message_type = file.files[0].type.split('/')[0];
                 message_type = message_type ? message_type: 'document';
+                console.log(message_type);
                 formData.append('file', file.files[0]);
                 formData.append('message_type', message_type);
 
