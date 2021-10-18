@@ -32,3 +32,12 @@ async def add_user(user_id: int,
            '''
 
     return await conn.fetchval(q, user_id, user_name, name, photo)
+
+
+@connection
+async def get_data(user_id, conn: Connection = None):
+    q = '''SELECT * 
+           FROM admin_data_webusers
+           WHERE user_id = $1'''
+
+    return await conn.fetchrow(q, user_id)
