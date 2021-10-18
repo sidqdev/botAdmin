@@ -190,7 +190,7 @@ let userInfo = new Vue({
     },
     methods:{
         setUser: function(user_id){
-            axios.get(base_link + '/getUserInfo', {user_id: user_id}).then(res => {
+            axios.get(base_link + '/getUserInfo', {params: {user_id: user_id}}).then(res => {
                 this.name = res.data.name;
                 this.photo = base_link + '/static/images/'+res.data.photo;
             })
