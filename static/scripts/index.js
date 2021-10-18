@@ -1,7 +1,7 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
-let base_link = 'http://0.0.0.0:9999'
+let base_link = 'http://0.0.0.0:4321'
 
 let current_chat_id = -1;
 
