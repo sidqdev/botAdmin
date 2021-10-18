@@ -13,7 +13,7 @@
     <header>
         <h1 class="title">Время газа</h1>
     </header>
-    <aside id=chats>
+    <aside id="chats">
         <div class="chats-header">
 
             <h2 class="title">Выбор чата</h2>
@@ -72,6 +72,12 @@
             </div>
         </div>
     </main>
+    <aside id="right-aside">
+        <div id='user-info'>
+            <p>{{ name }}</p>
+            <img :src="photo">
+        </div>
+    </aside>
 </body>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

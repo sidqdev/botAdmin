@@ -7,6 +7,7 @@ let current_chat_id = -1;
 
 if (params.current_chat_id){
     current_chat_id = params.current_chat_id;
+    userInfo.setUser(current_chat_id)
 }
 let current_chat_list = 'all-chats';
 
@@ -98,6 +99,7 @@ var chat_list = new Vue({
         },
         chooseChat: function(chat_id){
             console.log('chat-' + String(chat_id));
+            userInfo.setUser(chat_id)
             new_chat = document.getElementById('chat-' + String(chat_id));
             old_chat = document.getElementById('chat-' + String(current_chat_id));
             if(old_chat){
@@ -179,6 +181,23 @@ var chat = new Vue({
         }
     }
 })
+
+let userInfo = new Vue({
+    el: '#user-info',
+    data: {
+        name: 'Имя пользователя', 
+        photo: base_link + '/static/images/default.png'
+    },
+    methods:{
+        setUser: function(user_id){
+            axios.get(base_link + '/getUserInfo', {user_id: user_id}).then(res => {
+                this.name = res.data.name;
+                this.photo = base_link + '/static/images/'+res.data.photo;
+            })
+        }
+    }
+})
+
 
 function update(){
     chat_list.setChats(current_chat_list);

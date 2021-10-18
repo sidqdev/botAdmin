@@ -59,3 +59,27 @@
     height: 50%;
     width: 50%;
 }
+
+#user-info{
+    height: 100%;
+    width: 100%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-info img{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user-info p{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 10%;
+    padding-top: 15px;
+}

@@ -25,14 +25,18 @@ button {
 
 body {
     display: grid;
-    grid-template: "header header" "aside main";
+    grid-template: "header header header" "aside main leftsidq";
     grid-template-rows: 0.15fr 0.85fr; /*Размеры строк*/
-    grid-template-columns: 0.25fr 0.75fr; /*Размеры столбцов*/
+    grid-template-columns: 0.25fr 0.50fr 0.25fr; /*Размеры столбцов*/
 }
 
-aside{
+#chats{
     grid-area: aside;
     background-color: var(--aside-color);
+}
+
+aside #right-aside{
+    grid-area: leftside;
 }
 
 header{
