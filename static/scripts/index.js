@@ -151,7 +151,7 @@ var chat = new Vue({
             if (file.files.length){
                 console.log(file.files[0]);
                 message_type = file.files[0].type.split('/')[0];
-                if(!message_type in ['audio', 'video', 'image']){
+                if(!['audio', 'video', 'image'].includes(message_type)){
                     message_type = 'document';
                 }
                 console.log(message_type);
