@@ -149,6 +149,7 @@ var chat = new Vue({
             formData.append('user_id', 0);
 
             if (file.files.length){
+                console.log(file.files[0]);
                 message_type = file.files[0].type.split('/')[0];
                 if(!message_type in ['audio', 'video', 'image']){
                     message_type = 'document';
