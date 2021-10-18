@@ -9,6 +9,7 @@ web_app.router.add_route('post', '/addUser', users.add_user, name='AddUser')
 web_app.router.add_route('post', '/createChat', chats.create_chat, name='CreateChat')
 web_app.router.add_route('get', '/getUserInfo', users.get_user_info, name='GetUserInfo')
 web_app.router.add_route('post', '/updateUserComment', users.set_user_comment, name='UpdateUserComment')
+
 web_app.router.add_route('get', '/getChats', chats.get_chats, name='GetChats')
 web_app.router.add_route('get', '/getChat', chats.get_chat, name='GetChat')
 

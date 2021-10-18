@@ -187,6 +187,7 @@ let userInfo = new Vue({
                 if(res.data.user_name != 'none'){
                     this.link = 'https://t.me/' + res.data.user_name;
                 }
+                console.log(res.data.comment);
                 this.comment = res.data.comment;
             })
         },
