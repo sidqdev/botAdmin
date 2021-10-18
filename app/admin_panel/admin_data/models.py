@@ -6,6 +6,7 @@ class WebUsers(models.Model):
     user_name = models.CharField(verbose_name='Юзернейм', max_length=256)
     name = models.CharField(verbose_name='Имя', max_length=256)
     photo = models.ImageField(verbose_name='Аватарка')
+    comment = models.TextField(verbose_name='Коментарий', default='')
 
 
 class Chats(models.Model):

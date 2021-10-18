@@ -176,7 +176,8 @@ let userInfo = new Vue({
     data: {
         name: 'Имя пользователя', 
         photo: base_link + '/static/images/default.png',
-        link: 'none'
+        link: 'none',
+        comment: 'Комментарий к пользователю'
     },
     methods:{
         setUser: function(user_id){
@@ -186,6 +187,7 @@ let userInfo = new Vue({
                 if(res.data.user_name != 'none'){
                     this.link = 'https://t.me/' + res.data.user_name;
                 }
+                this.comment = res.data.comment;
             })
         }
     }
