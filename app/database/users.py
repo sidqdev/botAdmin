@@ -41,3 +41,12 @@ async def get_data(user_id, conn: Connection = None):
            WHERE user_id = $1'''
 
     return await conn.fetchrow(q, user_id)
+
+
+@connection
+async def update_comment(user_id, comment, conn: Connection = None):
+    q = '''UPDATE admin_data_webusers
+           SET comment = $2
+           WHERE user_id = $1'''
+
+    await conn.fetch(q, user_id, comment)

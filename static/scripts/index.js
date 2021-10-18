@@ -191,9 +191,14 @@ let userInfo = new Vue({
             })
         },
         saveText: function(){
-            let data = document.getElementById('user-comment').value;
+            let comment = document.getElementById('user-comment').value;
             let user_id = current_chat_id;
-            console.log(data, user_id);
+            let formData = new FormData();
+
+            formData.append('comment', comment);
+            formData.append('user_id', user_id);
+            
+            axios.post(base_link + '/updateUserComment', formData)
         }
     }
 })

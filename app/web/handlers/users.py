@@ -47,3 +47,10 @@ async def get_user_info(request: Request):
     data = dict(await users.get_data(user_id))
     return web.Response(text=dumps(data))
 
+
+async def set_user_comment(request: Request):
+    data = await request.post()
+    user_id = int(data.get('user_id'))
+    comment = data.get('comment')
+    await users.update_comment(user_id, comment)
+    return web.Response(text='OK')
