@@ -1,20 +1,3 @@
-const urlSearchParams = new URLSearchParams(window.location.search);
-const params = Object.fromEntries(urlSearchParams.entries());
-
-let base_link = 'http://161.35.141.25:4321'
-
-let current_chat_id = -1;
-
-if (params.current_chat_id){
-    current_chat_id = params.current_chat_id;
-    userInfo.setUser(current_chat_id)
-}
-let current_chat_list = 'all-chats';
-
-
-setTimeout(function(){
-    document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight}, 1000);
-
 function set_current_style(data){
     data.forEach((element) => {
         var chat_id = element['chat_id'];
@@ -199,10 +182,26 @@ let userInfo = new Vue({
 })
 
 
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+
+let base_link = 'http://161.35.141.25:4321'
+
+let current_chat_id = -1;
+
+let current_chat_list = 'all-chats';
+
+if (params.current_chat_id){
+    current_chat_id = params.current_chat_id;
+    userInfo.setUser(current_chat_id);
+}
+
+setTimeout(function(){
+    document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight}, 1000);
+    
 function update(){
     chat_list.setChats(current_chat_list);
     chat.updateChat(current_chat_id);
 }
 
 setInterval(update, 500);
-
