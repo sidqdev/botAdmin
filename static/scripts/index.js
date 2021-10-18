@@ -175,13 +175,17 @@ let userInfo = new Vue({
     el: '#user-info',
     data: {
         name: 'Имя пользователя', 
-        photo: base_link + '/static/images/default.png'
+        photo: base_link + '/static/images/default.png',
+        link: 'none'
     },
     methods:{
         setUser: function(user_id){
             axios.get(base_link + '/getUserInfo', {params: {user_id: user_id}}).then(res => {
                 this.name = res.data.name;
                 this.photo = base_link + '/static/images/'+res.data.photo;
+                if(res.data.user_name != 'none'){
+                    this.link = 'https://t.me/' + res.data.user_name;
+                }
             })
         }
     }

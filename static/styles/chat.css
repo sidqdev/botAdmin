@@ -76,7 +76,7 @@
     margin-right: auto;
 }
 
-#user-info p{
+#user-info p, a{
     text-align: center;
     font-size: 30px;
     width: 100%;

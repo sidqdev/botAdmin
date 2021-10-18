@@ -73,8 +73,13 @@
         </div>
     </main>
     <aside id="right-aside">
-        <div id='user-info'>
-            <p>{{ name }}</p>
+        < id='user-info'>
+            <div v-if="link != 'none'">
+                <p>{{ name }}</p>
+            </div>
+            <div v-else>
+                <a :href="link">{{ name }}</a>
+            </div>
             <img :src="photo">
         </div>
     </aside>
