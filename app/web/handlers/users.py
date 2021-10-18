@@ -43,7 +43,7 @@ async def add_user(request: Request):
 
 
 async def get_user_info(request: Request):
-    user_id = request.query.get('user_id')
+    user_id = int(request.query.get('user_id'))
     data = dict(await users.get_data(user_id))
     return web.Response(text=dumps(data))
 
