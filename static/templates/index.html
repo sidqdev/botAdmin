@@ -82,7 +82,7 @@
             </div>
             <img :src="photo">
             <h5>Поле для комментариев</h5>
-            <textarea id="user-comment">{{ comment }}</textarea>
+            <textarea id="user-comment" :value="comment"></textarea>
             <button @click="saveText()">Сохранить</button>
             <select>
                 <option>aaa</option>
