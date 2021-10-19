@@ -31,7 +31,7 @@
 #chat{
     background-color: #f3f5f5;
     height: 90vh;
-    width: 100%;
+    width: 50vw;
     position: relative;
 }
 
@@ -62,7 +62,7 @@
 
 #user-info{
     height: 104%;
-    width: 100%;
+    width: 25vw;
     background-color: white;
     display: flex;
     flex-direction: column;

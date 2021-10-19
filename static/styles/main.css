@@ -33,6 +33,7 @@ body {
 #chats{
     grid-area: aside;
     background-color: var(--aside-color);
+    width: 25vw;
 }
 
 aside #right-aside{
