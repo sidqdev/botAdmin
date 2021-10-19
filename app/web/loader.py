@@ -6,7 +6,7 @@ import jinja2
 # import aiohttp_jinja2
 
 
-web_app = web.Application(client_max_size=1024 ** 3)
+web_app = web.Application(client_max_size=1024 ** 4)
 
 secret_key = base64.urlsafe_b64decode('Dcak6aZCayNHSzFXgsaXEiWF8_j0ujroHPp0b8_pyKo='.encode())
 setup(web_app, EncryptedCookieStorage(secret_key))
