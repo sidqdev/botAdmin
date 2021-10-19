@@ -109,8 +109,8 @@ var chat = new Vue({
     el: '#chat',
     data: {
         chat: [],
-        statusLabel: 'Открыть чат',
-        status: 'opened',
+        // statusLabel: 'Открыть чат',
+        // status: 'opened',
     },
     methods: {
         updateChat: function(chat_id){
@@ -162,12 +162,12 @@ var chat = new Vue({
             
              document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight;
         },
-        changeStatus: function(status){
-            let formData = new FormData();
-            formData.append('chat_id', current_chat_id);
-            formData.append('status', status);
-            axios.post(base_link + '/setChatStatus', formData);
-        }
+        // changeStatus: function(status){
+        //     let formData = new FormData();
+        //     formData.append('chat_id', current_chat_id);
+        //     formData.append('status', status);
+        //     axios.post(base_link + '/setChatStatus', formData);
+        // }
     }
 })
 
@@ -177,7 +177,9 @@ let userInfo = new Vue({
         name: 'Имя пользователя', 
         photo: base_link + '/static/images/default.png',
         link: 'none',
-        comment: 'Комментарий к пользователю'
+        comment: 'Комментарий к пользователю',
+        statusLabel: 'Открыть чат',
+        status: 'opened',
     },
     methods:{
         setUser: function(user_id){
@@ -200,6 +202,12 @@ let userInfo = new Vue({
             formData.append('user_id', user_id);
             
             axios.post(base_link + '/updateUserComment', formData)
+        },
+        changeStatus: function(status){
+            let formData = new FormData();
+            formData.append('chat_id', current_chat_id);
+            formData.append('status', status);
+            axios.post(base_link + '/setChatStatus', formData);
         }
     }
 })

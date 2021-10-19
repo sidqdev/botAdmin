@@ -68,7 +68,6 @@
                 <textarea type="text" id='input-message'></textarea>
                 <button @click="sendMessage()">Отправить</button>
                 <input type='file' id='input-file'>
-                <button @click="changeStatus(status)">{{ statusLabel }}</button>
             </div>
         </div>
     </main>
@@ -81,6 +80,7 @@
                 <p><a :href="link" target="_blank">{{ name }}</a></p>
             </div>
             <img :src="photo">
+            <button @click="changeStatus(status)">{{ statusLabel }}</button>
             <h5>Поле для комментариев</h5>
             <textarea id="user-comment" :value="comment"></textarea>
             <button @click="saveText()">Сохранить</button>
