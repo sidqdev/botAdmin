@@ -172,7 +172,8 @@ var chat = new Vue({
              document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight;
         },
         overload: function(link){
-            console.log(link);
+            html = '<div id="overlay"></div><div id="magnify"><img src="'+link+'"><div id="close-popup"><i></i></div></div>';
+            document.body.innerHTML += html;
         }
         // changeStatus: function(status){
         //     let formData = new FormData();

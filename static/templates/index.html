@@ -49,7 +49,7 @@
                                     <img :src="message.content" @click="overload(message.content)">
                                 </div>
                                 <div v-else-if="message.message_type == 'video'">
-                                    <video :src="message.content" controls="controls" @click="overload(message.content)"></video>
+                                    <video :src="message.content" controls="controls"></video>
                                 </div>
                                 <div v-else-if="message.message_type == 'audio'">
                                     <audio :src="message.content" controls="controls"></audio>
