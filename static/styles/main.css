@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root{
     --background-color: grey;
@@ -16,11 +16,11 @@ html, body {
     margin: 0;
     background-color: var(--background-color);
     max-height: 100%;
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
 
 button {
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
