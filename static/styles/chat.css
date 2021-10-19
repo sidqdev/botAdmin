@@ -105,6 +105,15 @@
     margin-top: 0px;
     padding-top: 0px;
 }
+#user-info button{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 
 a{
     color: black;
