@@ -172,8 +172,12 @@ var chat = new Vue({
              document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight;
         },
         overload: function(link){
-            html = '<div id="overlay"></div><div id="magnify"><img src="'+link+'"><div id="close-popup"><i></i></div></div>';
-            document.body.innerHTML += html;
+            bp = new BigPicture({
+                el: '.message-item',
+                imgSrc: link
+            })
+            bp.prev()
+
         }
         // changeStatus: function(status){
         //     let formData = new FormData();
