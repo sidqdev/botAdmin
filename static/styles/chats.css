@@ -19,8 +19,7 @@ p{
 }
 
 #chat-types .pressed{
-    border-bottom: #f2aa4c;
-    border-width: 3px;
+    border-bottom: 3px solid #f2aa4c;
 }
 .user-preview{
     display: grid;
