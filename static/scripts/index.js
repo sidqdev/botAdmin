@@ -120,6 +120,7 @@ var chat = new Vue({
     el: '#chat',
     data: {
         chat: [],
+        file: '📎'
     },
     methods: {
         updateChat: function(chat_id){
@@ -177,7 +178,14 @@ var chat = new Vue({
                 imgSrc: link
             })
             bp.prev()
-
+        },
+        uploadFile: function(){
+            file = document.getElementById('input-file');
+            if (file.files.length){
+                file = file.files[0];
+                this.file = '📎' + file.filename;
+            }
+            else this.file = '📎';
         }
         // changeStatus: function(status){
         //     let formData = new FormData();
