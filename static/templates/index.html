@@ -41,7 +41,7 @@
                 <ul id='chat-items'>
                     <li v-for="message in chat">
                         <div class='message-item'>
-                            <div :class="message.user">
+                            <div :class="message.user" titile="sd">
                                 <div v-if="message.message_type == 'text'">
                                     <p>{{ message.name }} - {{ message.content }}</p>
                                 </div>

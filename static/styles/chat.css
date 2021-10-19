@@ -12,10 +12,11 @@
     height: 100%;
 }
 
-#time{
-    position: fidex;
+.time{
+    position: relative;
+    margin-left: 89%;
     color: #85d7ab;
-    font-size: 10px;
+    font-size: 14px;
 }
 #send-menu{
     height: 10%;
