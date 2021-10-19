@@ -77,10 +77,11 @@
 #user-info img{
     height: auto;
     width: 13vw;
-    border-radius: 150px;
+    border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
+    margin-bottom: 15px;
 }
 
 #user-info p{
