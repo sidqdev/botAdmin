@@ -140,6 +140,7 @@ var chat = new Vue({
             }   
         },
         sendMessage: function(){
+            this.file = '📎';
             elem = document.getElementById('input-message');
             file = document.getElementById('input-file');
             text = elem.value;
