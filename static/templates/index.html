@@ -41,7 +41,7 @@
                 <ul id='chat-items'>
                     <li v-for="message in chat">
                         <div class='message-item'>
-                            <div :class="message.user" titile="sd">
+                            <div :class="message.user">
                                 <div v-if="message.message_type == 'text'">
                                     <p>{{ message.name }} - {{ message.content }}</p>
                                 </div>
@@ -59,7 +59,7 @@
                                         <a :href="message.content">{{ message.content.split('/')[message.content.split('/').length - 1] }}</a>
                                     </object>
                                 </div>
-                                <div class="time"><p>{{ message.insert_date }}</p></div>
+                                <div class="time"><p :title="message.insert_date">{{ message.insert_date }}</p></div>
                             </div>
                         </div>
                     </li>
