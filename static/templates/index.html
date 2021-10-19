@@ -77,14 +77,14 @@
     <aside id="right-aside">
         <div id='user-info'>
             <div v-if="link == 'none'">
-                <p>{{ name }}</p>
+                <p id="name">{{ name }}</p>
             </div>
             <div v-else>
-                <p><a :href="link" target="_blank">{{ name }}</a></p>
+                <p id="name"><a :href="link" target="_blank">{{ name }}</a></p>
             </div>
             <img :src="photo">
             <button @click="changeStatus()">{{ statusLabel }}</button>
-            <p>Поле для комментариев</p>
+            <p id="title">Поле для комментариев</p>
             <textarea id="user-comment" :value="comment"></textarea>
             <button @click="saveText()">Сохранить</button>
             <select>

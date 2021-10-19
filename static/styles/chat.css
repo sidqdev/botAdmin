@@ -84,7 +84,17 @@
     margin-bottom: 15px;
 }
 
-#user-info p{
+#user-info #name{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#user-info #title{
     text-align: center;
     font-size: 30px;
     width: 100%;
