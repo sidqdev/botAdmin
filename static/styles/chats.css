@@ -14,10 +14,14 @@ p{
 #chat-types button {
     padding: 10px;
     background: white;
-    border-radius: 5px;
+    border: none;
     font-size: 100%;
 }
 
+#chat-types .pressed{
+    text-decoration: underline;
+    text-decoration-color: #f2aa4c;
+}
 .user-preview{
     display: grid;
     grid-template: "image name" "image preview";

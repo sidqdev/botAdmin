@@ -30,6 +30,8 @@ function insertParam(key, value) {
     
 }
 
+document.getElementById(chatType).classList.add('pressed');
+
 var chat_list = new Vue({
     el: '#chats',
     data: {
@@ -40,6 +42,8 @@ var chat_list = new Vue({
         setChats: function(chatType){
             current_chat_list = chatType;
             if (chatType == 'all-chats'){
+                document.getElementById("opened-chats").classList.remove('pressed');
+                document.getElementById("closed-chats").classList.remove('pressed');
                 axios.get(base_link + '/getChats').then(res => {
                     let chats = [];
                     let opened = 0;
@@ -55,6 +59,8 @@ var chat_list = new Vue({
                     set_current_style(res.data);
                 });
             }else if(chatType == 'opened-chats'){
+                document.getElementById("all-chats").classList.remove('pressed');
+                document.getElementById("closed-chats").classList.remove('pressed');
                 axios.get(base_link + '/getChats').then(res => {
                     let chats = [];
                     res.data.forEach((element) => {
@@ -69,6 +75,8 @@ var chat_list = new Vue({
                     set_current_style(res.data);
                 });
             }else{
+                document.getElementById("opened-chats").classList.remove('pressed');
+                document.getElementById("all-chats").classList.remove('pressed');
                 axios.get(base_link + '/getChats').then(res => {
                     let chats = [];
                     let opened = 0;
