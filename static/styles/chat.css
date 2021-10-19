@@ -32,11 +32,10 @@
     font-size: large;
 }
 #chat{
-    background-color: white;
+    background-color: #f3f5f5;
     height: 100%;
-    max-height: 800px;
-    width: 80%;
-    margin-left: 100px;
+    /* max-height: 800px; */
+    width: 100%;
     position: relative;
 }
 

@@ -10,7 +10,7 @@ function set_current_style(data){
         var elem = document.getElementById('chat-' + String(chat_id));
         if(elem){
             if(chat_id == current_chat_id){
-                elem.style['background-color'] = '#a0d4fa';
+                elem.style['background-color'] = '#e8f6f8';
             }else{
                 elem.style['background-color'] = 'white';
             }
@@ -95,7 +95,7 @@ var chat_list = new Vue({
                 old_chat.style['background-color'] = 'white';
             }
             if(new_chat){
-                new_chat.style['background-color'] = '#a0d4fa';
+                new_chat.style['background-color'] = '#e8f6f8';
             }
             current_chat_id = chat_id;
             chat.updateChat(chat_id);
