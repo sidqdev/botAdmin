@@ -38,7 +38,8 @@ async def add_user(user_id: int,
 async def get_data(user_id, conn: Connection = None):
     q = '''SELECT * 
            FROM admin_data_webusers
-           WHERE user_id = $1'''
+           INNER JOIN admin_data_chats ON admin_data_chats.chat_id = admin_data_webusers.user_id
+           WHERE admin_data_webusers.user_id = $1'''
 
     return await conn.fetchrow(q, user_id)
 
