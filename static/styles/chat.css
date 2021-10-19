@@ -107,12 +107,11 @@
 }
 #user-info button{
     text-align: center;
-    font-size: 30px;
-    width: 100%;
+    font-size: 15px;
+    width: 50%;
     height: auto;
-    padding-top: 15px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a{
