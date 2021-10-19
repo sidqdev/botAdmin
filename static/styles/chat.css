@@ -24,9 +24,10 @@
     width: 70%;
 }
 #send-menu button{
-    height: 60px;
-    width: 120px;
-    font-size: large;
+    height: auto;
+    width: auto;
+    font-size: medium;
+    background-color: #85d7ab;
 }
 #chat{
     background-color: #f3f5f5;
