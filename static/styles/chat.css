@@ -12,6 +12,11 @@
     height: 100%;
 }
 
+#time{
+    position: fidex;
+    color: #85d7ab;
+    font-size: 10px;
+}
 #send-menu{
     height: 10%;
     width: 100%;
