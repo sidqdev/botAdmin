@@ -30,7 +30,7 @@ function insertParam(key, value) {
     
 }
 
-document.getElementById(chatType).classList.add('pressed');
+document.getElementById('all-chats').classList.add('pressed');
 
 var chat_list = new Vue({
     el: '#chats',
@@ -40,6 +40,9 @@ var chat_list = new Vue({
     },
     methods: {
         setChats: function(chatType){
+
+            document.getElementById(chatType).classList.add('pressed');
+
             current_chat_list = chatType;
             if (chatType == 'all-chats'){
                 document.getElementById("opened-chats").classList.remove('pressed');
