@@ -184,7 +184,7 @@ var chat = new Vue({
             if (file.files.length){
                 file = file.files[0];
                 console.log(file);
-                this.file = '📎' + file.filename;
+                this.file = '📎' + file.name;
             }
             else this.file = '📎';
         }
