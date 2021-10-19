@@ -21,9 +21,10 @@ p{
 .user-preview{
     display: grid;
     grid-template: "image name" "image preview";
-    grid-template-rows: 0.5fr 0.5fr;/*Размеры строк*/
+    grid-template-rows: 0.2fr 0.7fr;
     grid-template-columns: 0.25fr 0.75fr; /*Размеры столбцов*/
     background-color: white;
+    padding: 1px;
 }
 .user-preview-box{
     margin-top: 10px;
@@ -48,8 +49,8 @@ p{
 .user-preview .image{
     grid-area: image;
     font-size: 15px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50px;
 }
 #current-chats ul{
