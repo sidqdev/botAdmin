@@ -55,8 +55,8 @@ async def get_chat(request: Request):
     if data:
         for i in data:
             cht = dict(i)
-            cht['insert_date'] = cht.get('insert_date').strftime('%d.%m.%Y - %H:%M:S')
             cht['time'] = cht.get('insert_date').strftime('%H:%M')
+            cht['insert_date'] = cht.get('insert_date').strftime('%d.%m.%Y - %H:%M:S')
             chat.append(cht)
 
     return web.Response(text=dumps(chat), content_type='application/json')
