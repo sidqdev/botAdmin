@@ -30,14 +30,12 @@
 }
 #chat{
     background-color: #f3f5f5;
-    height: 87vh;
+    height: 104%;
     width: 100%;
-    position: relative;
 }
 
 .me, .user{
     width: 60%;
-    background-color: greenyellow;
     margin-top: 10px;
     margin-bottom: 10px;
     word-wrap: break-word;
@@ -45,9 +43,11 @@
 
 .message-item .me{
     float: right;
+    background-color: #e6ecec;
 }
 .message-item .user{
     float: left;
+    background-color: white;
 }
 
 .message-item img, video{
@@ -56,9 +56,9 @@
 }
 
 #user-info{
-    height: 86.3vh;
+    height: 104%;
     width: 100%;
-    background-color: rgb(76, 167, 129);
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
