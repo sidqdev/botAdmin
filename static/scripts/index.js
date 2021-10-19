@@ -183,6 +183,7 @@ var chat = new Vue({
             file = document.getElementById('input-file');
             if (file.files.length){
                 file = file.files[0];
+                console.log(file);
                 this.file = '📎' + file.filename;
             }
             else this.file = '📎';
