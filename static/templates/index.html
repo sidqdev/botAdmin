@@ -68,9 +68,13 @@
             <div id='send-menu'>
                 <textarea type="text" id='input-message'></textarea>
                 <button @click="sendMessage()">Отправить</button>
-                <label id="input-file-style">
+                <div>
+                    <label for="image_uploads">Choose images to upload (PNG, JPG)</label>
+                    <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+                  </div>
+                <!-- <label id="input-file-style">
                     <input type='file' id='input-file'>
-                </label>
+                </label> -->
             </div>
         </div>
     </main>

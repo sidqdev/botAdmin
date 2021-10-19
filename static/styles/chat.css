@@ -139,16 +139,3 @@
 a{
     color: black;
 }
-input[type="file"] {
-    display: none;
-}
-#input-file-style{
-    margin-left: 9px;
-    margin-top: 2px;
-    height: 30%;
-    padding-left: 25px;
-    background: url("http://161.35.141.25:4321/static/images/clip.ico") no-repeat scroll 0 0 transparent;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
