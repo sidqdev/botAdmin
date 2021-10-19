@@ -43,7 +43,7 @@
                         <div class='message-item'>
                             <div :class="message.user">
                                 <div v-if="message.message_type == 'text'">
-                                    <p>{{ message.name }} - {{ message.content }}</p>
+                                    <p>{{ message.content }}</p>
                                 </div>
                                 <div v-else-if="message.message_type == 'image'">
                                     <img :src="message.content" @click="overload($event, message.content)">
