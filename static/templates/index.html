@@ -19,8 +19,8 @@
             <h2 class="title">Выбор чата</h2>
             <div id="chat-types">
                 <button @click="setChats('all-chats')">Все чаты</button>
-                <button @click="setChats('opened-chats')">Открытые чаты: {{ openedChatCount }}</button>
-                <button @click="setChats('closed-chats')">Закрытые чаты</button>
+                <button @click="setChats('opened-chats')">Открытые({{ openedChatCount }})</button>
+                <button @click="setChats('closed-chats')">Закрытые</button>
             </div>
         </div>
         <div id=current-chats>
