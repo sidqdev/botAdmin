@@ -71,5 +71,6 @@ aside .title{
     justify-content: center;
 }
 
-
-
+br{
+    height: 30px;
+}
