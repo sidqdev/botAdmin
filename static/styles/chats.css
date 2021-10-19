@@ -19,8 +19,8 @@ p{
 }
 
 #chat-types .pressed{
-    text-decoration: underline;
-    text-decoration-color: #f2aa4c;
+    border-bottom: #f2aa4c;
+    border-width: 3px;
 }
 .user-preview{
     display: grid;

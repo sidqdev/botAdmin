@@ -243,4 +243,4 @@ function update(){
     chat.updateChat(current_chat_id);
 }
 
-setInterval(update, 500);
+setInterval(update, 750);
