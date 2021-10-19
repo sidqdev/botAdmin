@@ -203,14 +203,14 @@ let userInfo = new Vue({
             
             axios.post(base_link + '/updateUserComment', formData)
         },
-        changeStatus: function(status){
+        changeStatus: function(){
+
             let formData = new FormData();
             formData.append('chat_id', current_chat_id);
-            formData.append('status', status);
-            axios.post(base_link + '/setChatStatus', formData);
-            
+            formData.append('status', this.status);
             this.status = this.status == 'opened' ? 'closed': 'opened';
             this.statusLabel = this.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
+            axios.post(base_link + '/setChatStatus', formData);
         }
     }
 })

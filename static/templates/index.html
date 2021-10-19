@@ -80,7 +80,7 @@
                 <p><a :href="link" target="_blank">{{ name }}</a></p>
             </div>
             <img :src="photo">
-            <button @click="changeStatus(status)">{{ statusLabel }}</button>
+            <button @click="changeStatus()">{{ statusLabel }}</button>
             <h5>Поле для комментариев</h5>
             <textarea id="user-comment" :value="comment"></textarea>
             <button @click="saveText()">Сохранить</button>
