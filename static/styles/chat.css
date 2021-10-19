@@ -89,7 +89,7 @@
     font-size: 30px;
     width: 100%;
     height: auto;
-    padding-top: 15px;
+    padding-top: 5px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -99,11 +99,17 @@
     font-size: 30px;
     width: 100%;
     height: auto;
-    padding-top: 15px;
+    padding-top: 30px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
+#user-info select{
+    margin-top: 45px;
+}
+#user-info #send{
+    width: 100%;
+}
 
 #user-info textarea{
     text-align: center;
