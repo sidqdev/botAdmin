@@ -24,19 +24,15 @@ p{
     grid-template-rows: 0.5fr 0.5fr;/*Размеры строк*/
     grid-template-columns: 0.25fr 0.75fr; /*Размеры столбцов*/
     background-color: white;
-    border-radius: 7px;
-    padding: 10px;
 }
 .user-preview-box{
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    /* height: 50px; */
 }
 
 .user-preview-box:hover{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    background-color: #e8f6f8;
 }
 
 .user-preview .name{
