@@ -13,11 +13,14 @@
 }
 
 .time{
-    position: relative;
-    margin-left: 92%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin-right: 10px;
     color: #85d7ab;
     font-size: 14px;
 }
+
 #send-menu{
     height: 10%;
     width: 100%;
