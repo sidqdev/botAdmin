@@ -47,22 +47,19 @@
 }
 
 .me, .user{
-    width: 60%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: max-content;
+    max-width: 65%;
     word-wrap: break-word;
-    border-radius: 20px;
-    padding-top: 5px;
-    padding-left: 9px;
-    padding-bottom: 5px;
+    border-radius: 15px;
+    padding: 10px
 }
 
 .message-item .me{
-    float: right;
+    margin-left: auto;
     background-color: #e6ecec;
 }
 .message-item .user{
-    float: left;
+    margin-right: auto;
     background-color: white;
 }
 
