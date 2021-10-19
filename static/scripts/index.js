@@ -109,8 +109,6 @@ var chat = new Vue({
     el: '#chat',
     data: {
         chat: [],
-        // statusLabel: 'Открыть чат',
-        // status: 'opened',
     },
     methods: {
         updateChat: function(chat_id){
@@ -186,6 +184,8 @@ let userInfo = new Vue({
             axios.get(base_link + '/getUserInfo', {params: {user_id: user_id}}).then(res => {
                 this.name = res.data.name;
                 this.photo = base_link + '/static/images/'+res.data.photo;
+                this.statusLabel = res.data.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
+                this.status = res.data.status == 'opened' ? 'closed': 'opened';
                 if(res.data.user_name != 'none'){
                     this.link = 'https://t.me/' + res.data.user_name;
                 }
@@ -208,6 +208,9 @@ let userInfo = new Vue({
             formData.append('chat_id', current_chat_id);
             formData.append('status', status);
             axios.post(base_link + '/setChatStatus', formData);
+            
+            this.status = this.status == 'opened' ? 'closed': 'opened';
+            this.statusLabel = this.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
         }
     }
 })
