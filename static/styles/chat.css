@@ -30,8 +30,9 @@
 }
 #chat{
     background-color: #f3f5f5;
-    height: 104%;
+    height: 87vh;
     width: 100%;
+    position: relative;
 }
 
 .me, .user{
