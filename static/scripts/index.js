@@ -209,7 +209,7 @@ let userInfo = new Vue({
             formData.append('chat_id', current_chat_id);
             formData.append('status', this.status);
             this.status = this.status == 'opened' ? 'closed': 'opened';
-            this.statusLabel = this.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
+            this.statusLabel = this.status == 'opened' ? 'Открыть чат': 'Закрыть чат';
             axios.post(base_link + '/setChatStatus', formData);
         }
     }
