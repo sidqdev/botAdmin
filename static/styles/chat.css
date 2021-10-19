@@ -106,3 +106,12 @@
 a{
     color: black;
 }
+input[type="file"] {
+    display: none;
+}
+#input-file-style{
+    display: inline-block;
+    line-height: 30px;
+    padding-left: 30px;
+    background: url("http://161.35.141.25:4321/static/images/clip.ico") no-repeat scroll 0 0 transparent;
+}
