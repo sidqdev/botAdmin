@@ -17,14 +17,13 @@
     width: 100%;
     background-color: #f3f5f5;
     display: flex;
-    align-items: center;
 }
 #send-menu textarea{
     height: 90%;
     width: 70%;
 }
 #send-menu button{
-    height: auto;
+    height: min-content;
     width: auto;
     font-size: medium;
     background-color: #85d7ab;
