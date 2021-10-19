@@ -46,7 +46,7 @@
                                     <p>{{ message.name }} - {{ message.content }}</p>
                                 </div>
                                 <div v-else-if="message.message_type == 'image'">
-                                    <img :src="message.content" @click="overload(message.content)">
+                                    <img :src="message.content" @click="overload($event, message.content)">
                                 </div>
                                 <div v-else-if="message.message_type == 'video'">
                                     <video :src="message.content" controls="controls"></video>

@@ -171,9 +171,9 @@ var chat = new Vue({
             
              document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight;
         },
-        overload: function(link){
+        overload: function(e, link){
             bp = new BigPicture({
-                el: '.message-item',
+                el: e.target,
                 imgSrc: link
             })
             bp.prev()
