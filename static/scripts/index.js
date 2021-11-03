@@ -135,6 +135,9 @@ var chat = new Vue({
                             message.content = base_link + '/static/' + message.content;
                         }
                     })
+                    if(this.chat != chat){
+                        document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight + 100;
+                    }
                     this.chat = chat;
                 })
             }   
