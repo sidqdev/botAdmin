@@ -72,9 +72,7 @@ async def send_harvested_message(request: Request):
     else:
         user_id = int(user_id)
 
-    print(harvested_id)
     message_data = await harvested.get_harvested_message(harvested_id)
-    print(message_data)
     await chats.add_message(chat_id, user_id, message_data.get('message_type_id'), message_data.get('content'))
 
     return web.Response(text=dumps({'status': 'SUCCESS', 'message': 'message was sent'}))
