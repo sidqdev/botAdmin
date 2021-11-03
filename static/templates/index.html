@@ -42,7 +42,7 @@
                     <li v-for="message in chat">
                         <div class='message-item'>
                             <div :class="message.user">
-                                <div v-if="message.message_type == 'text'">
+                                <div v-if="['text', 'action'].includes(message.message_type)">
                                     <p>{{ message.content }}</p>
                                 </div>
                                 <div v-else-if="message.message_type == 'image'">
