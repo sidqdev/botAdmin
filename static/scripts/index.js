@@ -138,9 +138,11 @@ var chat = new Vue({
                     let temp_chat = this.chat;
                     this.chat = chat;
 
-                    if(temp_chat.length != chat.length){
-                        document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight + 100;
-                    }
+                    setTimeout(function(){
+                        if(temp_chat.length != chat.length){
+                            document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight + 100;
+                        }
+                    }, 30)
                 })
             }   
         },
