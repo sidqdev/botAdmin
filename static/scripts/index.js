@@ -131,7 +131,7 @@ var chat = new Vue({
                         message.user = message.user_id == 0 ? 'me' : 'user';
                         this.statusLabel = message.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
                         this.status = message.status == 'opened' ? 'closed': 'opened';
-                        if (message.message_type != 'text'){
+                        if (!['text', 'action'].includes(message.message_type)){
                             message.content = base_link + '/static/' + message.content;
                         }
                     })
