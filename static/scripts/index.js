@@ -135,10 +135,12 @@ var chat = new Vue({
                             message.content = base_link + '/static/' + message.content;
                         }
                     })
-                    if(this.chat.length != chat.length){
+                    let temp_chat = this.chat;
+                    this.chat = chat;
+
+                    if(temp_chat.length != chat.length){
                         document.getElementById('chat-items').scrollTop = document.getElementById('chat-items').scrollHeight + 100;
                     }
-                    this.chat = chat;
                 })
             }   
         },
