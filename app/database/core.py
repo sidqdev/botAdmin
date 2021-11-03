@@ -1,4 +1,11 @@
 import asyncpg
+import configparser
+
+
+config = configparser.RawConfigParser()
+config.read('config.ini')
+
+postgres_config = dict(config['POSTGRES'])
 
 
 class Database(object):
@@ -22,9 +29,9 @@ class Database(object):
             max_size=3,
             host='localhost',
             port=5432,
-            database='messanger_web',
-            user='messanger_web',
-            password='messanger_web'
+            database=postgres_config.get('database'),
+            user=postgres_config.get('user'),
+            password=postgres_config.get('password')
         )
         return self.__pool
 
