@@ -210,6 +210,7 @@ let userInfo = new Vue({
         comment: 'Комментарий к пользователю',
         statusLabel: 'Открыть чат',
         status: 'opened',
+        harvesteds: []
     },
     methods:{
         setUser: function(user_id){
@@ -243,6 +244,21 @@ let userInfo = new Vue({
             this.status = this.status == 'opened' ? 'closed': 'opened';
             this.statusLabel = this.status == 'opened' ? 'Открыть чат': 'Закрыть чат';
             axios.post(base_link + '/setChatStatus', formData);
+        },
+        setHarvested: function(){
+            axios.get(base_link + '/getHarvestedMessages').then(res => {
+                this.harvesteds = res.data;
+            })
+        },
+        sendHarvested: function(){
+            harvested_id = document.getElementById('selectHarvested').value;
+            console.log(harvested_id);
+            let formData = new FormData();
+            formData.append('chat_id', current_chat_id);
+            formData.append('harvested_id', harvested_id);
+            formData.append('user_id', 0);
+            
+            axios.post(base_link + '/sendHarvestedMessages', formData)
         }
     }
 })
@@ -263,6 +279,7 @@ setTimeout(function(){
 function update(){
     chat_list.setChats(current_chat_list);
     chat.updateChat(current_chat_id);
+    userInfo.setHarvested();
 }
 
 setInterval(update, 750);

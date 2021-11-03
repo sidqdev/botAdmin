@@ -88,10 +88,10 @@
             <p id="title">Поле для комментариев</p>
             <textarea id="user-comment" :value="comment"></textarea>
             <button @click="saveText()">Сохранить</button>
-            <select>
-                <option>aaa</option>
+            <select id="selectHarvested">
+                <option v-for="harvested in harvesteds" :value="harvested.id">{{ harvested.preview }}</option>
             </select>
-            <button id="send">Отправить цепочку сообщений</button>
+            <button id="send-harvested" @click="sendHarvested();">Отправить заготовленоое сообщение</button>
         </div>
     </aside>
 </body>

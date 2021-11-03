@@ -39,3 +39,11 @@ class MessageUpdates(models.Model):
     message = models.ForeignKey(verbose_name='Сообщение', to=WebMessages,
                                      on_delete=models.SET_NULL, null=True)
     status = models.BooleanField(verbose_name='Статус отправки', default=False)
+
+
+class HarvestedMessages(models.Model):
+    id = models.CharField(verbose_name='Айди сообщения', unique=True, primary_key=True, max_length=255)
+    message_type = models.ForeignKey(verbose_name='Тип сообщения', to=MessageTypes,
+                                     on_delete=models.SET_NULL, null=True)
+    content = models.TextField(verbose_name='Контент')
+    preview = models.CharField(verbose_name='Превью сообщения', max_length=255)

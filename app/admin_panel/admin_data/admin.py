@@ -7,5 +7,8 @@ admin.site.register(Chats)
 admin.site.register(WebMessages)
 admin.site.register(MessageTypes)
 admin.site.register(MessageUpdates)
+admin.site.register(HarvestedMessages)
+
+
 
 

@@ -18,4 +18,8 @@ web_app.router.add_route('post', '/setChatStatus', chats.set_chat_status, name='
 
 web_app.router.add_route('get', '/getUpdates', updates.get_updates, name='GetUpdates')
 
+web_app.router.add_route('get', '/getHarvestedMessages', messages.get_harvested_messages, name='GetHarvestedMessages')
+web_app.router.add_route('post', '/sendHarvestedMessages', messages.send_harvested_message, name='SendHarvestedMessages')
+
+
 web_app.router.add_static('/static/', 'static', name='static')

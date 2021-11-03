@@ -4,8 +4,7 @@ from aiohttp_session import get_session
 import aiohttp_jinja2
 from uuid import uuid4
 from json import dumps
-from app.database import users
-from app.database import chats
+from app.database import users, chats, harvested
 
 
 async def add_message(request: Request):
@@ -46,3 +45,36 @@ async def add_message(request: Request):
 
     return web.Response(text=dumps({'status': 'SUCCESS', 'message': 'message was sent'}))
 
+
+async def get_harvested_messages(request: Request):
+    data = await harvested.get_harvested_messages()
+    return web.Response(text=dumps(data))
+
+
+async def send_harvested_message(request: Request):
+    data = await request.post()
+
+    chat_id = str(data.get('chat_id', ''))
+    user_id = str(data.get('user_id', ''))
+    harvested_id = data.get('harvested_id', '')
+
+    if not chat_id:
+        return web.Response(text=dumps({'status': 'ERROR', 'message': 'chat_id did not send'}))
+    if not chat_id.isdigit():
+        return web.Response(text=dumps({'status': 'ERROR', 'message': 'chat_id must be integer'}))
+    else:
+        chat_id = int(chat_id)
+
+    if not user_id:
+        return web.Response(text=dumps({'status': 'ERROR', 'message': 'user_id did not send'}))
+    if not user_id.isdigit():
+        return web.Response(text=dumps({'status': 'ERROR', 'message': 'user_id must be integer'}))
+    else:
+        user_id = int(user_id)
+
+    print(harvested_id)
+    message_data = await harvested.get_harvested_message(harvested_id)
+    print(message_data)
+    await chats.add_message(chat_id, user_id, message_data.get('message_type_id'), message_data.get('content'))
+
+    return web.Response(text=dumps({'status': 'SUCCESS', 'message': 'message was sent'}))
