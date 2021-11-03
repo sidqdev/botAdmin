@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import configparser
+
+config = configparser.RawConfigParser()
+config.read('config.ini')
+
+postgres_config = dict(config['POSTGRES'])
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,9 +83,9 @@ WSGI_APPLICATION = 'admin_panel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'messanger_web',
-        'USER': 'messanger_web',
-        'PASSWORD': 'messanger_web',
+        'NAME': postgres_config.get('database'),
+        'USER': postgres_config.get('user'),
+        'PASSWORD': postgres_config.get('password'),
         'HOST': 'localhost',
         'PORT': '5432',
     }

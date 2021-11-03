@@ -1,4 +1,4 @@
-let base_link = 'http://161.35.141.25:4321'
+let base_link = location.protocol + '//' + location.host;
 
 let current_chat_id = -1;
 
@@ -247,6 +247,7 @@ let userInfo = new Vue({
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
+
 
 if (params.current_chat_id){
     current_chat_id = params.current_chat_id;

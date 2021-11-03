@@ -6,6 +6,14 @@ from uuid import uuid4
 from json import dumps
 from app.database import users
 from app.database import chats
+import configparser
+
+
+config = configparser.RawConfigParser()
+config.read('config.ini')
+
+server = dict(config['SERVER'])
+ip = server.get('ip')
 
 
 async def create_chat(request: Request):
@@ -30,7 +38,7 @@ async def get_chats(request: Request):
     chat_list = await chats.get_chats()
     chat_list = [dict(x) for x in chat_list]
     for cht in chat_list:
-        cht['photo'] = f'http://161.35.141.25:4321/static/images/{cht.get("photo")}'
+        cht['photo'] = f'http://{ip}/static/images/{cht.get("photo")}'
         if cht.get('last_message'):
             last_message = dict(cht.get('last_message'))
             last_message['insert_date'] = last_message.get('insert_date').isoformat()
