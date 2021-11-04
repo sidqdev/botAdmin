@@ -14,6 +14,7 @@ async def add_message(request: Request):
     user_id = str(data.get('user_id', ''))
     message_type = data.get('message_type', '')
     content = data.get('content', '')
+    ignore = int(data.get('content', '0'))
 
     file = data.get('file')
 
@@ -39,7 +40,7 @@ async def add_message(request: Request):
         content = file_name
 
     if content:
-        await chats.add_message(chat_id, user_id, message_type, content)
+        await chats.add_message(chat_id, user_id, message_type, content, ignore=ignore)
     else:
         return web.Response(text=dumps({'status': 'ERROR', 'message': 'content did not send'}))
 

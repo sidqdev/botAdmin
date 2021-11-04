@@ -77,16 +77,17 @@ async def get_chat(chat_id, conn: Connection = None) -> list:
 
 
 @connection
-async def add_message(chat_id, user_id, message_type, content, conn: Connection = None):
+async def add_message(chat_id, user_id, message_type, content, ignore=0, conn: Connection = None):
     q = '''INSERT INTO admin_data_webmessages(insert_date, chat_id, from_user_id, message_type_id, content)
            VALUES(NOW(), $1, $2, $3, $4)
            RETURNING id'''
 
     id = await conn.fetchval(q, chat_id, user_id, message_type, content)
     if user_id == 0:
-        q = '''INSERT INTO admin_data_messageupdates(message_id, status)
-               VALUES($1, false)'''
-        await conn.fetch(q, id)
+        if not ignore:
+            q = '''INSERT INTO admin_data_messageupdates(message_id, status)
+                   VALUES($1, false)'''
+            await conn.fetch(q, id)
         q = '''UPDATE admin_data_chats
                SET status='opened'
                WHERE chat_id=$1'''
