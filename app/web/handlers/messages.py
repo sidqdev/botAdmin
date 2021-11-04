@@ -14,7 +14,7 @@ async def add_message(request: Request):
     user_id = str(data.get('user_id', ''))
     message_type = data.get('message_type', '')
     content = data.get('content', '')
-    ignore = int(data.get('content', '0'))
+    ignore = int(data.get('ignore', '0'))
 
     file = data.get('file')
 
