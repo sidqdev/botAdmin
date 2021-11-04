@@ -88,10 +88,6 @@ async def add_message(chat_id, user_id, message_type, content, ignore=0, conn: C
             q = '''INSERT INTO admin_data_messageupdates(message_id, status)
                    VALUES($1, false)'''
             await conn.fetch(q, id)
-        q = '''UPDATE admin_data_chats
-               SET status='opened'
-               WHERE chat_id=$1'''
-        await conn.fetch(q, chat_id)
 
 
 @connection
