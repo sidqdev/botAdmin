@@ -128,13 +128,18 @@ var chat = new Vue({
                 axios.get(base_link + '/getChat', {params: {'chat_id': chat_id}}).then(res =>{
                     let chat = res.data;
                     chat.forEach((message) => {
-                        message.user = message.user_id == 0 ? 'me' : 'user';
-                        this.statusLabel = message.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
-                        this.status = message.status == 'opened' ? 'closed': 'opened';
-                        if (!['text', 'action'].includes(message.message_type)){
-                            message.content = base_link + '/static/' + message.content;
+                        if(message.message_type == 'time_splitter'){
+                            message.user = 'common';
+                        }else{
+                            message.user = message.user_id == 0 ? 'me' : 'user';
+                            this.statusLabel = message.status == 'opened' ? 'Закрыть чат' : 'Открыть чат';
+                            this.status = message.status == 'opened' ? 'closed': 'opened';
+                            if (!['text', 'action'].includes(message.message_type)){
+                                message.content = base_link + '/static/' + message.content;
+                            }
                         }
                     })
+
                     let temp_chat = this.chat;
                     this.chat = chat;
 

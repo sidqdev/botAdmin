@@ -1,3 +1,4 @@
+from datetime import datetime
 from aiohttp import web
 from aiohttp.web import Request
 from aiohttp_session import get_session
@@ -64,9 +65,23 @@ async def get_chat(request: Request):
         for i in data:
             cht = dict(i)
             cht['time'] = cht.get('insert_date').strftime('%H:%M')
+            cht['time_st'] = cht.get('insert_date').timestamp()
             cht['insert_date'] = cht.get('insert_date').strftime('%d.%m.%Y - %H:%M:%S')
             chat.append(cht)
+        
+        i = 0
+        while i < len(chat) - 1:
+            if datetime.fromtimestamp(chat[i].get('time_st')).date() != datetime.fromtimestamp(chat[i+1].get('time_st')).date():
+                mess = {
+                    'message_type': 'time_splitter',
+                    'content': datetime.fromtimestamp(chat[i+1].get('time_st')).strftime('%d.%m.%Y')
+                }
+                chat.insert(i+1, mess)
+                i += 2
+            else:
+                i += 1
 
+    # print(chat)
     return web.Response(text=dumps(chat), content_type='application/json')
 
 

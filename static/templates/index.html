@@ -45,6 +45,11 @@
                                 <div v-if="['text', 'action'].includes(message.message_type)">
                                     <p>{{ message.content }}</p>
                                 </div>
+                                <div v-else-if="message.message_type == 'time_splitter'"> 
+                                    <hr>
+                                        <p style="text-align:center">{{ message.content }}</p>
+                                    <hr>
+                                </div>
                                 <div v-else-if="message.message_type == 'image'">
                                     <img :src="message.content" @click="overload($event, message.content)">
                                 </div>
